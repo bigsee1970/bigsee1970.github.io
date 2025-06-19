@@ -1,0 +1,32 @@
+* {
+  font: 2 rem "roboto" sans-serif;
+}
+
+.center-box {
+  border: 2px solid brown;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first {
+  display: block;
+  padding: 22px;
+  border: 2px solid black;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 22px;
+  border: 2px solid black;
+  color: red;
+}
+
+li {
+  float: none;
+}
+
+li a {
+  float: left;
+  display: block;
+}
