@@ -9,10 +9,17 @@ body {
   margin-right: auto;
 }
 
+.text {
+  background-color: white;
+  color: #555;
+}
 .first {
   display: block;
   padding: 22px;
   border: 1px solid brown;
+}
+second {
+  
 }
 
 nav ul {
@@ -32,9 +39,14 @@ li {
 li a {
   float: left;
   display: block;
+  margin: 1%;
   text-decoration: none;
   font-family: "Roboto";
   color: white;
+}
+
+li a:hover {
+  background-color: #bf153f;
 }
 
 .text {
@@ -43,4 +55,7 @@ li a {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+footer {
 }
