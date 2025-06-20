@@ -1,6 +1,6 @@
 body {
   background-color: #ffffd4;
-  
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .center-box {
@@ -15,36 +15,32 @@ body {
   color: #555;
 }
 .first {
-  height:auto;
+  height: auto;
   display: block;
   border: 1px solid brown;
 }
 
 .pic {
   width: 100%;
-    padding: 0;
+  padding: 0;
 }
 
 nav ul {
   background-color: #ff7f2a;
   list-style-type: none;
   overflow: hidden;
-
-  padding: 2px;
+  padding: 0;
+  margin: 0;
   border: 1px solid brown;
   color: red;
-}
-
-li {
-  float: none;
 }
 
 li a {
   float: left;
   display: block;
+  padding: 1%;
   margin: 1%;
   text-decoration: none;
-  font-family: "Roboto";
   color: white;
 }
 
@@ -52,6 +48,11 @@ li a:hover {
   background-color: #bf153f;
 }
 
+.Duna {
+  width: 30%;
+  padding: auto;
+  margin: 0;
+}
 .text {
   border: 1px solid brown;
   margin-left: auto;
@@ -61,11 +62,12 @@ li a:hover {
 }
 
 footer {
-    border: 2px solid brown;
+  border: 2px solid brown;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 footer iframe {
