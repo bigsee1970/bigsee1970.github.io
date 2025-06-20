@@ -1,5 +1,5 @@
-* {
-  font: 2 rem "roboto" sans-serif;
+body {
+  background-color: #ffffd4;
 }
 
 .center-box {
@@ -12,13 +12,16 @@
 .first {
   display: block;
   padding: 22px;
-  border: 2px solid black;
+  border: 1px solid brown;
 }
 
-.nav {
+nav ul {
+  background-color: #ff7f2a;
   list-style-type: none;
+  overflow: hidden;
+
   padding: 22px;
-  border: 2px solid black;
+  border: 1px solid brown;
   color: red;
 }
 
@@ -29,4 +32,15 @@ li {
 li a {
   float: left;
   display: block;
+  text-decoration: none;
+  font-family: "Roboto";
+  color: white;
+}
+
+.text {
+  border: 1px solid brown;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
