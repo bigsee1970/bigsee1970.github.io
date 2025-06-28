@@ -22,7 +22,7 @@ nav ul {
 
 nav ul li {
   flex: 1 1 0;
-}
+  }
 
 nav ul li a {
   display: block;
@@ -34,7 +34,7 @@ nav ul li a {
 
 li a:hover {
   background-color: #bf153f;
-}
+  }
 
 .II {
   background-color: white;
