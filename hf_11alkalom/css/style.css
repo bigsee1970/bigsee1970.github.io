@@ -12,7 +12,7 @@ body {
 header {
   text-align: center;
   display: block;
-  color: #3293F0;
+  color: #3293f0;
 }
 
 .hu {
@@ -61,12 +61,10 @@ h1 {
   text-shadow: 1px 1px 3px grey;
 }
 .title {
-  color: #105e4e;
+  color: #984115;
   text-align: center;
   text-shadow: 1px 1px 3px grey;
 }
-
-
 
 section {
   background-color: rgba(144, 147, 150, 0.6);
@@ -163,11 +161,6 @@ section {
   max-width: 14%;
   padding: 0;
   margin: 5px;
-}
-
-.title4 {
-  color: rgb(193, 18, 18);
-  text-align: center;
 }
 
 footer {
