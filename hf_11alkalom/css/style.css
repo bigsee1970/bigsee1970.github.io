@@ -12,7 +12,7 @@ body {
 header {
   text-align: center;
   display: block;
-  color: #105e4e;
+  color: #3293F0;
 }
 
 .hu {
@@ -66,11 +66,7 @@ h1 {
   text-shadow: 1px 1px 3px grey;
 }
 
-.II {
-  background-color: white;
-  margin: 0;
-  padding: 1%;
-}
+
 
 section {
   background-color: rgba(144, 147, 150, 0.6);
