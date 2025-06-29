@@ -7,7 +7,9 @@ body {
 }
 
 .main-pic {
-  width: 100%;
+  max-width: 100%;
+  width: auto;
+  display: block;
 }
 
 nav ul {
@@ -20,7 +22,7 @@ nav ul {
 
 nav ul li {
   flex: 1 1 0;
-}
+  }
 
 nav ul li a {
   display: block;
@@ -32,22 +34,24 @@ nav ul li a {
 
 li a:hover {
   background-color: #bf153f;
+  }
+
+.II {
+  background-color: white;
+  margin: 0;
+  padding: 1%;
 }
 
-.picfloat-right {
+.float-right {
+  display: block;
   float: right;
-  width: 30%;
+  max-width: 33%;
   height: auto;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 8px;
 }
 
-.II {
-  background-color: white;
-  margin: 0;
-  padding: 10px;
-}
 footer {
   height: 200px;
   padding: 0;
