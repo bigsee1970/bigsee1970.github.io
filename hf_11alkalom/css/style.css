@@ -83,7 +83,8 @@ section {
   text-align: center;
 }
 
-.pigpic {
+.pigpic,
+.drum {
   display: block;
   float: left;
   max-width: 14%;
@@ -98,13 +99,13 @@ section {
   padding: 0;
   margin: 5px;
 }
-.drum {
+/*.drum {
   display: block;
   float: left;
   max-width: 14%;
   padding: 0;
   margin: 5px;
-}
+}*/
 
 .title3 {
   color: gold;
@@ -139,7 +140,8 @@ section {
   padding: 0;
   margin: 5px;
 }
-.itabreakfast {
+.itabreakfast,
+.itacaffe {
   display: block;
   float: left;
   max-width: 14%;
@@ -155,13 +157,13 @@ section {
   margin: 5px;
 }
 
-.itacaffe {
+/*.itacaffe {
   display: block;
   float: left;
   max-width: 14%;
   padding: 0;
   margin: 5px;
-}
+}*/
 
 footer {
   text-decoration: none;
