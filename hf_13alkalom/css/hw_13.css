@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Roboto", Arial, sans-serif;
+  border: 2px solid #ddd;
+}
+
+div.flex-container {
+  display: flex;
+  background-color: #d7b520;
+  padding: 25px;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.heading {
+  display: flex;
+  border: 2px solid white;
+}
+
+.section1 {
+  display: flex;
+  border: 2px solid white;
+}
+.section2 {
+  display: flex;
+  border: 2px solid white;
+}
+.section3 {
+  display: flex;
+  border: 2px solid white;
+}
+.aside {
+  display: flex;
+  border: 2px solid white;
+}
+.foot {
+  display: flex;
+  border: 2px solid white;
+}
