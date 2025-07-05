@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <div class="content">
@@ -34,16 +38,33 @@
           </ul>
           <div class="form">
             <p>Kérem töltse ki a jelentkezési űrlapot</p>
-            <label for="name">Név:</label><br>
-            <input id="name" type="text" name="username" required! /><br>
+            <label for="name">Név:</label><br />
+            <input
+              id="name"
+              type="text"
+              name="username"
+              required!
+              placeholder="Marmon K. Anna"
+            /><br />
 
-            <label for="email">Email:</label><br>
-            <input id="email" type="email" name="email" /><br>
+            <label for="email">Email:</label><br />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="valami@valami.com"
+            /><br />
 
-            <label for="phone">Telefon:</label><br>
-            <input id="phone" type="number" name="phone" required /><br>
+            <label for="phone">Telefon:</label><br />
+            <input
+              id="phone"
+              type="number"
+              name="phone"
+              required
+              placeholder="+36301234567"
+            /><br />
 
-            <label for="lakechoose">Melyik tó érdekli:</label><br>
+            <label for="lakechoose">Melyik tó érdekli:</label><br />
             <select id="lakechoose" name="lakechoose" required>
               <option value="">Válasszon</option>
               <option value="Balaton">A balaton</option>
@@ -53,31 +74,55 @@
 
             <p>Milyen szállást keres?</p>
             <div class="form-group">
-              <label><input id="hotel" type="checkbox" name="szallas" /> Szálloda</label><br>
-              <label><input id="apartman" type="checkbox" name="szallas" /> Apartmanház</label><br>
-              <label><input id="camping" type="checkbox" name="szallas" /> Kemping</label><br>
+              <label
+                ><input id="hotel" type="checkbox" name="szallas" />
+                Szálloda</label
+              ><br />
+              <label
+                ><input id="apartman" type="checkbox" name="szallas" />
+                Apartmanház</label
+              ><br />
+              <label
+                ><input id="camping" type="checkbox" name="szallas" />
+                Kemping</label
+              ><br />
             </div>
             <p>Ellátás típusa?</p>
             <div class="form-group">
-              <label><input id="full" type="radio" name="ellatas" /> Teljes</label><br>
-              <label><input id="half" type="radio" name="ellatas" /> Félpanzió</label><br>
-              <label><input id="breakfast" type="radio" name="ellatas" /> Csak reggeli</label><br>
-              <label><input id="none" type="radio" name="ellatas" /> Nem kérek ellátást</label><br>
-            </div><br>
-<div>
-<label for="text">Üzenet:</label><br>
-<textarea name="text" id="message" maxlength="600"></textarea>
-  
-</div>
-            
+              <label
+                ><input id="full" type="radio" name="ellatas" /> Teljes</label
+              ><br />
+              <label
+                ><input id="half" type="radio" name="ellatas" />
+                Félpanzió</label
+              ><br />
+              <label
+                ><input id="breakfast" type="radio" name="ellatas" /> Csak
+                reggeli</label
+              ><br />
+              <label
+                ><input id="none" type="radio" name="ellatas" /> Nem kérek
+                ellátást</label
+              ><br />
+            </div>
+            <br />
+            <div>
+              <label for="text">Üzenet:</label><br />
+              <textarea
+                name="text"
+                id="message"
+                maxlength="600"
+                placeholder="Ha valamit még elmondanál nekünk..."
+              ></textarea>
+            </div>
           </div>
 
           <button>Mehet</button>
         </div>
 
         <div class="main-sections">
+          <t id="title">A Balaton</t>
           <div class="section1" id="link1">
-            <h2>A Balaton</h2>
             <img src="img/balatonkicsi.jpg" alt="Balaton" class="float-image" />
             <p>
               A Balaton Közép-Európa legnagyobb tava, Magyarország egyik
@@ -95,8 +140,8 @@
               legkedveltebb vidéke.
             </p>
           </div>
+          <t id="title">A Tisza-tó</t>
           <div class="section2" id="link2">
-            <h2>A Tisza-tó</h2>
             <img src="img/tiszato.jpg" alt="Tisza-tó" class="float-image" />
             <p>
               A Tisza-tó Magyarország második legnagyobb tava, a Tisza folyó
@@ -113,8 +158,8 @@
               képest.
             </p>
           </div>
+          <t id="title">A Szelidi-tó</t>
           <div class="section3" id="link3">
-            <h2>A Szelidi-tó</h2>
             <img src="img/szelidito.jpg" alt="Szelidi-tó" class="float-image" />
             <p>
               A Szelidi-tó Bács-Kiskun vármegyében található, Kalocsa közelében.
@@ -132,7 +177,14 @@
           </div>
         </div>
       </div>
-      <div class="foot" style="order: 6">6 lábléc</div>
+      <div class="foot" style="order: 6">
+        <span>&copy; 2025 - levaikaroly - Minden jog fenntartva!</span>
+        <nav>
+          <a href="mailto:dontwritetome70@gmail.com">Kapcsolat</a> |
+          <a href="https://github.com/" target="blank">GitHub</a> |
+          <a href="adatvedelem.html">Adatvédelem</a>
+        </nav>
+      </div>
     </div>
   </body>
 </html>
