@@ -23,47 +23,64 @@
           id="headpic"
         />
       </div>
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="#link1">Balaton</a>
+          </li>
+          <li>
+            <a href="#link2">Tisza-tó</a>
+          </li>
+          <li>
+            <a href="#link3">Szelidi-tó</a>
+          </li>
+        </ul>
+      </div>
       <div class="flex-container">
         <div class="aside">
-          <ul>
-            <li>
-              <a href="#link1">A balaton</a>
-            </li>
-            <li>
-              <a href="#link2">A Tisza-tó</a>
-            </li>
-            <li>
-              <a href="#link3">A Szelidi-tó</a>
-            </li>
-          </ul>
+          <div class="aside-menu">
+            <ul>
+              <li>
+                <a href="#link1">* Balaton</a>
+              </li>
+              <li>
+                <a href="#link2">* Tisza-tó</a>
+              </li>
+              <li>
+                <a href="#link3">* Szelidi-tó</a>
+              </li>
+            </ul>
+          </div>
           <div class="form">
-            <p>Kérem töltse ki a jelentkezési űrlapot</p>
+            <p>Kérem töltse ki a jelentkezési űrlapot!</p>
             <label for="name">Név:</label><br />
             <input
               id="name"
               type="text"
               name="username"
-              required!
               placeholder="Marmon K. Anna"
+              required
             /><br />
-
-            <label for="email">Email:</label><br />
+            <br />
+            <label for="email">E-mail:</label><br />
             <input
               id="email"
               type="email"
               name="email"
               placeholder="valami@valami.com"
+              required
             /><br />
-
+            <br />
             <label for="phone">Telefon:</label><br />
             <input
               id="phone"
               type="number"
               name="phone"
-              required
               placeholder="+36301234567"
+              required
+              required
             /><br />
-
+            <br />
             <label for="lakechoose">Melyik tó érdekli:</label><br />
             <select id="lakechoose" name="lakechoose" required>
               <option value="">Válasszon</option>
@@ -75,34 +92,40 @@
             <p>Milyen szállást keres?</p>
             <div class="form-group">
               <label
-                ><input id="hotel" type="checkbox" name="szallas" />
+                ><input id="hotel" type="checkbox" name="hotel" required />
                 Szálloda</label
               ><br />
               <label
-                ><input id="apartman" type="checkbox" name="szallas" />
+                ><input
+                  id="apartman"
+                  type="checkbox"
+                  name="apartman"
+                  required
+                />
                 Apartmanház</label
               ><br />
               <label
-                ><input id="camping" type="checkbox" name="szallas" />
+                ><input id="camping" type="checkbox" name="kemping" required />
                 Kemping</label
               ><br />
             </div>
             <p>Ellátás típusa?</p>
             <div class="form-group">
               <label
-                ><input id="full" type="radio" name="ellatas" /> Teljes</label
+                ><input id="full" type="radio" name="ellatas" required />
+                Teljes</label
               ><br />
               <label
-                ><input id="half" type="radio" name="ellatas" />
+                ><input id="half" type="radio" name="ellatas" required />
                 Félpanzió</label
               ><br />
               <label
-                ><input id="breakfast" type="radio" name="ellatas" /> Csak
-                reggeli</label
+                ><input id="breakfast" type="radio" name="ellatas" required />
+                Csak reggeli</label
               ><br />
               <label
-                ><input id="none" type="radio" name="ellatas" /> Nem kérek
-                ellátást</label
+                ><input id="none" type="radio" name="ellatas" required /> Nem
+                kérek ellátást</label
               ><br />
             </div>
             <br />
