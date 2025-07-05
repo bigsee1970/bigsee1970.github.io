@@ -3,18 +3,28 @@
   padding: 0;
 }*/
 
+t {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2em;
+}
 body {
-  max-width: 80%;
-  margin: auto;
-  padding: auto;
+  background-color: #d7b520;
+  width: 80vw;
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
 }
 
 .content {
-  border: 2px solid #660707;
-  background-color: #d7b520;
-  width: 80%;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 div.flex-container {
@@ -27,6 +37,8 @@ div.flex-container {
 }
 
 .heading {
+  background-color: #e7e6e6;
+  margin: 0;
   border: 2px solid #41719c;
   border-radius: 4px;
   width: 100%;
@@ -34,11 +46,10 @@ div.flex-container {
   flex-wrap: wrap;
   justify-content: center;
   align-content: stretch;
+  overflow: hidden;
   /*margin: 1%;
   padding: 1%;*/
 }
-
-
 
 .heading img {
   display: block;
@@ -47,34 +58,47 @@ div.flex-container {
   object-fit: cover;
   border-radius: 4px 4px 0 0;
 }
+
 .section1 {
+  background-color: #fbe5d6;
+  color: #083c17;
   margin: 10px;
   padding: 10px;
 }
 
 .section2 {
+  background-color: #fff2cc;
+  color: #661f1f;
   margin: 10px;
   padding: 10px;
 }
 
 .section3 {
+  background-color: #deebf7;
+  color: #211466;
   margin: 10px;
   padding: 10px;
 }
-.foot {
-  border: 2px solid #41719c;
-  border-radius: 4px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: stretch;
-}
 
 .aside {
+  background-color: #5b9bd5;
+  color: white;
   border: 2px solid #41719c;
   border-radius: 4px;
   flex-direction: column;
   width: 33%;
+}
+
+.aside ul {
+  list-style-type: none;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+div ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .aside textarea {
@@ -89,8 +113,11 @@ div.flex-container {
   border-radius: 6px;
 }
 
+.aside a:hover {
+  animation: flash 1s;
+}
 .float-image {
-  float: right;
+  float: left;
   margin: 10px;
   width: 200px;
   height: auto;
@@ -100,24 +127,51 @@ div.flex-container {
   order: 2;
   flex-direction: column;
   width: 60%;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
 }
 
 .section1 {
   border: 2px solid #41719c;
   border-radius: 4px;
-
   width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 10px;
 }
 .section2 {
   border: 2px solid #41719c;
   border-radius: 4px;
-
   width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 10px;
 }
 
 .section3 {
   border: 2px solid #41719c;
   border-radius: 4px;
-
   width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.foot {
+  background-color: #e5e4e4;
+  border: 2px solid #41719c;
+  border-radius: 4px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  text-align: center;
+  padding: 12px 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.foot a:hover {
+  animation: flash 1s;
 }
