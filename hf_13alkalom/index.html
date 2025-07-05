@@ -34,23 +34,45 @@
           </ul>
           <div class="form">
             <p>Kérem töltse ki a jelentkezési űrlapot</p>
-            <label for="name">Név:</label>
-            <input id="name" type="text" name="username" required />
+            <label for="name">Név:</label><br>
+            <input id="name" type="text" name="username" required! /><br>
 
-            <label for="email">Email:</label>
-            <input id="email" type="email" name="email" />
+            <label for="email">Email:</label><br>
+            <input id="email" type="email" name="email" /><br>
 
-            <label for="phone">Tel.:</label>
-            <input id="phone" type="number" name="phone" required />
+            <label for="phone">Telefon:</label><br>
+            <input id="phone" type="number" name="phone" required /><br>
 
-            <label for="lakechoose">Melyik tó érdekli:</label>
+            <label for="lakechoose">Melyik tó érdekli:</label><br>
             <select id="lakechoose" name="lakechoose" required>
               <option value="">Válasszon</option>
               <option value="Balaton">A balaton</option>
               <option value="Tisza">A Tisza-tó</option>
               <option value="Szelidi">A Szelidi-tó</option>
             </select>
+
+            <p>Milyen szállást keres?</p>
+            <div class="form-group">
+              <label><input id="hotel" type="checkbox" name="szallas" /> Szálloda</label><br>
+              <label><input id="apartman" type="checkbox" name="szallas" /> Apartmanház</label><br>
+              <label><input id="camping" type="checkbox" name="szallas" /> Kemping</label><br>
+            </div>
+            <p>Ellátás típusa?</p>
+            <div class="form-group">
+              <label><input id="full" type="radio" name="ellatas" /> Teljes</label><br>
+              <label><input id="half" type="radio" name="ellatas" /> Félpanzió</label><br>
+              <label><input id="breakfast" type="radio" name="ellatas" /> Csak reggeli</label><br>
+              <label><input id="none" type="radio" name="ellatas" /> Nem kérek ellátást</label><br>
+            </div><br>
+<div>
+<label for="text">Üzenet:</label><br>
+<textarea name="text" id="message" maxlength="600"></textarea>
+  
+</div>
+            
           </div>
+
+          <button>Mehet</button>
         </div>
 
         <div class="main-sections">
