@@ -5,8 +5,8 @@
 
 body {
   max-width: 80%;
-  margin:  auto;
-  padding:  auto;
+  margin: auto;
+  padding: auto;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
 }
@@ -38,12 +38,29 @@ div.flex-container {
   padding: 1%;*/
 }
 
-.headpic {
-  max-width: 100%;
-  width: auto;
-  display: block;
-} 
 
+
+.heading img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+.section1 {
+  margin: 10px;
+  padding: 10px;
+}
+
+.section2 {
+  margin: 10px;
+  padding: 10px;
+}
+
+.section3 {
+  margin: 10px;
+  padding: 10px;
+}
 .foot {
   border: 2px solid #41719c;
   border-radius: 4px;
@@ -57,21 +74,32 @@ div.flex-container {
   border: 2px solid #41719c;
   border-radius: 4px;
   flex-direction: column;
-  /*order: 2;*/
-  width: 30%;
+  width: 33%;
 }
+
+.aside textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  resize: vertical;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
 .float-image {
-            float: right;
-            margin: 10px;
-            width: 200px;
-            height: auto;
-        }
+  float: right;
+  margin: 10px;
+  width: 200px;
+  height: auto;
+}
 .main-sections {
   display: flex;
   order: 2;
   flex-direction: column;
   width: 60%;
-  
 }
 
 .section1 {
@@ -93,5 +121,3 @@ div.flex-container {
 
   width: 100%;
 }
-
-
