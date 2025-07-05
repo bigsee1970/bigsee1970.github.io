@@ -11,15 +11,106 @@
     />
   </head>
   <body>
-    
-      <div class="flex-container">
-        <div class="heading">fejléc</div>
-        <div class="section1">szekció1</div>
-        <div class="section2">szekció2</div>
-        <div class="section3">szekció3</div>
-        <div class="aside">oldalsáv aside</div>
-        <div class="foot">lábléc</div>
+    <div class="content">
+      <div class="heading">
+        <img
+          src="img/szemuveg.jpg"
+          alt="nyar_hoseg_hohullam_meleg_kanikula_uv_sugarzas_vizpart_strand_napszemuveg"
+          id="headpic"
+        />
       </div>
-    
+      <div class="flex-container">
+        <div class="aside">
+          <ul>
+            <li>
+              <a href="#link1">A balaton</a>
+            </li>
+            <li>
+              <a href="#link2">A Tisza-tó</a>
+            </li>
+            <li>
+              <a href="#link3">A Szelidi-tó</a>
+            </li>
+          </ul>
+          <div class="form">
+            <p>Kérem töltse ki a jelentkezési űrlapot</p>
+            <label for="name">Név:</label>
+            <input id="name" type="text" name="username" required />
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" />
+
+            <label for="phone">Tel.:</label>
+            <input id="phone" type="number" name="phone" required />
+
+            <label for="lakechoose">Melyik tó érdekli:</label>
+            <select id="lakechoose" name="lakechoose" required>
+              <option value="">Válasszon</option>
+              <option value="Balaton">A balaton</option>
+              <option value="Tisza">A Tisza-tó</option>
+              <option value="Szelidi">A Szelidi-tó</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="main-sections">
+          <div class="section1" id="link1">
+            <h2>A Balaton</h2>
+            <img src="img/balatonkicsi.jpg" alt="Balaton" class="float-image" />
+            <p>
+              A Balaton Közép-Európa legnagyobb tava, Magyarország egyik
+              legnépszerűbb üdülőhelye. Nyáron több ezer turista látogat el ide,
+              hogy élvezze a napsütést és a vízpartot. A tó körül számos város
+              és falu található, mint például Siófok, Balatonfüred és Keszthely.
+              A Balaton északi partja dombosabb, míg a déli part sekélyebb és
+              strandolásra kiváló. A tó vize nyáron kellemesen meleg, így kiváló
+              fürdésre és vízi sportokra. Télen, ha befagy, korcsolyázásra és
+              jégvitorlázásra is alkalmas. A környéken borászatok, kilátók és
+              túraútvonalak is várják a látogatókat. A Balaton-felvidék
+              természeti szépsége lenyűgöző és fotózásra is tökéletes. A tó
+              kulturális eseményeknek és fesztiváloknak is otthont ad egész
+              évben. A Balaton valóban Magyarország egyik legszebb és
+              legkedveltebb vidéke.
+            </p>
+          </div>
+          <div class="section2" id="link2">
+            <h2>A Tisza-tó</h2>
+            <img src="img/tiszato.jpg" alt="Tisza-tó" class="float-image" />
+            <p>
+              A Tisza-tó Magyarország második legnagyobb tava, a Tisza folyó
+              duzzasztásával jött létre. A tó különlegessége, hogy mesterséges,
+              de mégis gazdag élővilág alakult ki benne. A Tisza-tó kiváló hely
+              horgászatra, csónakázásra és madármegfigyelésre. A vízpartot
+              nádasok, kisebb szigetek és sekély öblök tagolják. Poroszlón
+              található a Tisza-tavi Ökocentrum, ahol az élővilággal
+              ismerkedhetnek a látogatók. A tó körüli kerékpárút népszerű a
+              sportkedvelők körében. Nyáron strandolásra és vízi túrákra is
+              lehetőség van. A természetkedvelők számára igazi paradicsom a
+              környék. A Tisza-tó ökoturizmus szempontjából egyre népszerűbb
+              célpont. Csendesebb, nyugodtabb alternatívát nyújt a Balatonhoz
+              képest.
+            </p>
+          </div>
+          <div class="section3" id="link3">
+            <h2>A Szelidi-tó</h2>
+            <img src="img/szelidito.jpg" alt="Szelidi-tó" class="float-image" />
+            <p>
+              A Szelidi-tó Bács-Kiskun vármegyében található, Kalocsa közelében.
+              Ez egy természetes eredetű tó, amely különleges, lúgos kémhatású
+              vizéről ismert. A víz gyógyhatású, és kedvelt fürdőhely a nyári
+              hónapokban. A tó partján homokos strand, éttermek és szálláshelyek
+              várják a látogatókat. A környék csendes, családbarát környezetet
+              kínál. A tó vízfelülete sekély, így ideális kisgyermekes
+              családoknak is. Lehetőség van horgászatra és csónakázásra is. A
+              Szelidi-tó Természetvédelmi Terület része, így gazdag növény- és
+              madárvilággal büszkélkedhet. A nyári Szelidi-tavi Napok fesztivál
+              sok látogatót vonz. A Szelidi-tó nyugalmat és kikapcsolódást nyújt
+              a természet kedvelőinek.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="foot" style="order: 6">6 lábléc</div>
+    </div>
   </body>
 </html>
