@@ -1,45 +1,97 @@
-* {
+/** {
   margin: 0;
   padding: 0;
-}
+}*/
 
 body {
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 80%;
+  margin:  auto;
+  padding:  auto;
   font-family: "Roboto", Arial, sans-serif;
-  border: 2px solid #ddd;
+  font-size: 16px;
+}
+
+.content {
+  border: 2px solid #660707;
+  background-color: #d7b520;
+  width: 80%;
 }
 
 div.flex-container {
   display: flex;
-  background-color: #d7b520;
-  padding: 25px;
+  flex-direction: row;
+  padding: 2px;
+  margin: 0 auto;
   flex-wrap: wrap;
-  width: 80%;
+  gap: 24px;
 }
 
 .heading {
+  border: 2px solid #41719c;
+  border-radius: 4px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  /*margin: 1%;
+  padding: 1%;*/
+}
+
+.headpic {
+  max-width: 100%;
+  width: auto;
+  display: block;
+} 
+
+.foot {
+  border: 2px solid #41719c;
+  border-radius: 4px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.aside {
+  border: 2px solid #41719c;
+  border-radius: 4px;
+  flex-direction: column;
+  /*order: 2;*/
+  width: 30%;
+}
+.float-image {
+            float: right;
+            margin: 10px;
+            width: 200px;
+            height: auto;
+        }
+.main-sections {
   display: flex;
-  border: 2px solid white;
+  order: 2;
+  flex-direction: column;
+  width: 60%;
+  
 }
 
 .section1 {
-  display: flex;
-  border: 2px solid white;
+  border: 2px solid #41719c;
+  border-radius: 4px;
+
+  width: 100%;
 }
 .section2 {
-  display: flex;
-  border: 2px solid white;
+  border: 2px solid #41719c;
+  border-radius: 4px;
+
+  width: 100%;
 }
+
 .section3 {
-  display: flex;
-  border: 2px solid white;
+  border: 2px solid #41719c;
+  border-radius: 4px;
+
+  width: 100%;
 }
-.aside {
-  display: flex;
-  border: 2px solid white;
-}
-.foot {
-  display: flex;
-  border: 2px solid white;
-}
+
+
