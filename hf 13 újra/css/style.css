@@ -1,39 +1,71 @@
-.container {
-  display: grid;
+body {
+  border: 1px solid #ddd;
+  background-color: #d7b520;
+  width: 80vw;
+  max-width: 1280px;
+  min-width: 768px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {  display: grid;
   grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 1fr repeat(3, 3.5fr) 1fr;
+  grid-template-rows: 1fr 3.5fr 3.5fr 3.5fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 0px 0px;
+  gap: 5px 5px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "header header"
-    "aside section1"
-    "aside section2"
-    "aside section3"
-    "footer footer";
+  justify-items: stretch;
   width: 100%;
 }
 
 .header {
-  grid-area: header;
-}
+  border: 1px solid black;
+  background-color: #E7E6E6;
+  
+  grid-area: 1 / 1 / 2 / 3; }
 
 .aside {
-  grid-area: aside;
+  border: 1px solid black;
+  background-color: #5B9BD5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: 2 / 1 / 5 / 2;
 }
 
-.section2 {
-  grid-area: section2;
-}
-
-.section3 {
-  grid-area: section3;
-}
-
-.footer {
-  grid-area: footer;
-}
+.menü {
+  
+  grid-area: 1 / 1 / 2 / 4; }
 
 .section1 {
-  grid-area: section1;
+  border: 1px solid black;
+  background-color: #FBE5D6;
+  grid-area: 2 / 2 / 3 / 3; }
+
+.section2 {
+  border: 1px solid black;
+  background-color: #FFF2CC;
+  grid-area: 3 / 2 / 4 / 3; }
+
+.section3 {
+  border: 1px solid black;
+  background-color: #DEEBF7;
+  grid-area: 4 / 2 / 5 / 3; }
+
+.footer {
+  
+  border: 1px solid black;
+  
+  grid-area: 5 / 1 / 6 / 3; 
+background-color: #DEEBF7;
+  border: 2px solid #41719c;
+  border-radius: 6px;
+  align-content: stretch;
+  text-align: center;
+  margin: 0;
+  
 }
