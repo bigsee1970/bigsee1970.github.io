@@ -1,87 +1,66 @@
-body {
-  border: 1px solid #ddd;
-  background-color: #d7b520;
-  width: 80vw;
-  max-width: 1280px;
-  min-width: 768px;
-  margin: 0 auto;
-  padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-}
-
 .container {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 1fr 3.5fr 3.5fr 3.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.5fr;
   grid-auto-rows: 1fr;
-  gap: 5px 5px;
+  gap: 0px 0px;
   grid-auto-flow: row;
   justify-items: stretch;
   width: 100%;
 }
 
-.header {
-  /*border: 1px solid black;
-  background-color: #e7e6e6;*/
-  display: grid;
-  grid-area: 1 / 1 / 2 / 3;
-  border-radius: 6px 6px 0 0;
-  overflow: hidden;
-  
+.fejléc {
+  grid-area: 1 / 1 / 2 / 7;
 }
 
-.header img {
-  /*display: block;*/
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin: 0;
-  padding: 0;
-}
-
-.aside {
-  border: 1px solid black;
-  background-color: #5b9bd5;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-area: 2 / 1 / 5 / 2;
-}
-
-.menü {
-  grid-area: 1 / 1 / 2 / 4;
+.menü-full {
+  grid-area: 2 / 1 / 3 / 7;
 }
 
 .section1 {
-  border: 1px solid black;
-  background-color: #fbe5d6;
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.section2 {
-  border: 1px solid black;
-  background-color: #fff2cc;
   grid-area: 3 / 2 / 4 / 3;
 }
 
+.section2 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
 .section3 {
-  border: 1px solid black;
-  background-color: #deebf7;
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+.section4 {
+  grid-area: 3 / 5 / 4 / 6;
+}
+
+.section5 {
+  grid-area: 3 / 6 / 4 / 7;
+}
+
+.section6 {
   grid-area: 4 / 2 / 5 / 3;
 }
 
-.footer {
-  border: 1px solid black;
+.section7 {
+  grid-area: 4 / 3 / 5 / 4;
+}
 
-  grid-area: 5 / 1 / 6 / 3;
-  background-color: #deebf7;
-  border: 2px solid #41719c;
-  border-radius: 6px;
-  align-content: stretch;
-  text-align: center;
-  margin: 0;
+.section8 {
+  grid-area: 4 / 4 / 5 / 5;
+}
+
+.section9 {
+  grid-area: 4 / 5 / 5 / 6;
+}
+
+.section10 {
+  grid-area: 4 / 6 / 5 / 7;
+}
+
+.aside {
+  grid-area: 3 / 1 / 5 / 2;
+}
+
+.footer {
+  grid-area: 5 / 1 / 6 / 7;
 }
