@@ -1,102 +1,99 @@
 * {
+  box-sizing: border-box;
+
   margin: 0;
   padding: 0;
 }
-
 body {
-  background-image: url("../img/40-DSC_5092-1024x681.jpg");
+  background-color: #f9f6e6;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
- width: 98vw;      /* 90% a viewport szélességéből */
-  height: 90vh;     /* 90% a viewport magasságából */
-  margin: auto;     /* középre igazítás */
-}
-
-header h1 {
-  color: #f53300;
-  font-size: 2em;
-  text-align: center;
+  max-width: 100%;
+  width: 90vw;
+  height: 90vh;
   margin: auto;
+}
+.header {
+  /*background-color: #a08b14;*/
+  /*color: #333;*/
   padding: 20px;
+  background-image: url("../img/9-DSC_5023-1024x682_2.jpg");
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+#logo {
+  width: 80px; /* vagy pl. 5vw, ha arányos méret kell */
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  
+  /*float: right;  jobb oldalra igazítás */
+  /*margin: 0 auto;  középre igazítás */
+}
 .container {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 10px 10px;
+  gap: 5px 5px;
   grid-auto-flow: row;
   justify-items: stretch;
   width: 100%;
 }
 
-.main {
-  grid-area: 1 / 2 / 2 / 3;
+.header {
+  border: 1px solid black;
+  grid-area: 1 / 1 / 2 / 7;
 }
 
-section {
-  border: 2px solid white;
-  background-color: rgba(100, 22, 30, 0.4);
-  color: white;
-  /*font-size: 1vw;
-  margin: 10px;
-  padding: 0.5%;*/
-  box-sizing: border-box;
+.section {
+  border: 1px solid black;
   border-radius: 4px;
-  backdrop-filter: blur (6px);
-  -webkit-backdrop-filter: blur(6px);
+  grid-area: 2 / 2 / 6 / 6;
 }
 
 .asideL {
-  border: 2px solid white;
-  grid-area: 1 / 1 / 2 / 2;
+  border: 1px solid black;
+  border-radius: 4px;
+  grid-area: 2 / 1 / 6 / 2;
 }
 
 .asideR {
-  border: 2px solid white;
-  grid-area: 1 / 3 / 2 / 4;
+  border: 1px solid black;
+  border-radius: 4px;
+  grid-area: 2 / 6 / 6 / 7;
 }
 
-.wiki {
-  border: 2px solid white;
+.footer {
+  border: 1px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-area: 2 / 1 / 3 / 4;
+  grid-area: 6 / 1 / 7 / 7;
+}
+
+.copyright {
+  border: 1px solid black;
+  border-radius: 4px;
+  grid-area: 3 / 1 / 4 / 4;
 }
 
 .socialmedia {
-  border: 2px solid white;
-  grid-area: 2 / 1 / 3 / 4;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
+  border: 1px solid black;
+  border-radius: 4px;
   grid-area: 2 / 1 / 3 / 4;
 }
 
 .otherlinks {
-  border: 2px solid white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-area: 2 / 1 / 3 / 4;
+  border: 1px solid black;
+  border-radius: 4px;
   grid-area: 1 / 1 / 2 / 4;
-}
-
-.footer {
-  display: float;
-  padding: 0.2%;
-  border: 2px solid red;
-  color: yellow;
-  font-size: 1.2em;
-  align-items: stretch;
 }
