@@ -3,31 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deák újra</title>
+    <title>Deák</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Whisper&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="header-bg"></div>
-
-        <img
-          src="img/tercia23_logo_deak_etterem_brown.svg"
-          alt="Deák logó"
-          id="logo"
-        />
+    <header class="heading">
+      <div class="header-text">
+        <p>Foods ... Drinks ... Cocktails</p>
       </div>
-
-      <div class="section">section</div>
-      <div class="asideL">asideL</div>
-      <div class="asideR">asideR</div>
-      <div class="footer">
-        footer
-        <div class="otherlinks">otherlinks</div>
-        <div class="socialmedia">socialmedia</div>
-        <div class="copyright">copyright</div>
-      </div>
-    </div>
+      <nav class="nav">
+        
+          <img
+            src="img/tercia23_logo_deak_etterem_brown.svg"
+            alt="Deák logó"
+            id="logo"
+          />
+        
+        <ul class="navigation">
+          <li><a href="#">Főoldal</a></li>
+          <li><a href="#">Rólunk</a></li>
+          <li><a href="#">Szolgáltatások</a></li>
+          <li><a href="#">Kapcsolat</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
