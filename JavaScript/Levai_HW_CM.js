@@ -3,9 +3,9 @@ let b = Number(prompt("Kérek egy másik számot (cm)!"));
 let c = Number(prompt("Kérek egy harmadik számot (cm)!"));
 
 if (a === b && b  === c) {
-  console.log("egyenlő oldalú háromszög");
+  alert("Ez egy egyenlő oldalú háromszög");
 } else if ( a === c) {
-  console.log("egyenlő szárú háromszög");
+  alert("Ez egy egyenlő szárú háromszög");
 } else {
-  console.log("általános háromszög");
+  alert("Ez egy általános háromszög");
 }
