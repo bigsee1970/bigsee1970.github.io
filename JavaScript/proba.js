@@ -18,7 +18,7 @@ else {
 
 let sz1 = Number(prompt("Adj meg egy számot!"));
 let sz2 = Number(prompt("Adj meg egy másik számot!"));
-let m = prompt("Melyik műveletet szeretnéd elvégezni? (+, *,?)");
+let m = prompt("Melyik műveletet szeretnéd elvégezni? (+ *)?");
 
 if (m === "+") 
 {
