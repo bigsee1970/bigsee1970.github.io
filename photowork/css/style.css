@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.allcontainer {
+  display: grid;
+  box-sizing: border-box;
+  color: rgb(142, 132, 132);
+  text-align: right;
+  /*   background-color: #000000; */
+  margin: 2%;
+  opacity: 0.8;
+}
+
+.background-image {
+  opacity: 1;
+}
+
+
