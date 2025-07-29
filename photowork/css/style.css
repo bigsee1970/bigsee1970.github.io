@@ -19,7 +19,7 @@
   font-size: 1.5em;
   box-sizing: border-box;
   border: 3px solid white;
-   border-radius: 2px;
+  border-radius: 2px;
   max-width: 100vh;
   color: rgb(244, 234, 234);
   text-align: center;
@@ -34,8 +34,8 @@
   grid-auto-rows: 1fr;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  gap: 0;
-  grid-template-areas:
+  gap: 25px;
+    grid-template-areas:
     "portrait"
     "square"
     "landscape";
@@ -46,15 +46,12 @@
 }
 .portrait {
   grid-area: portrait;
-  
 }
 .square {
   grid-area: square;
-  
 }
 .landscape {
   grid-area: landscape;
-  
 }
 
 .galery a.portrait {
