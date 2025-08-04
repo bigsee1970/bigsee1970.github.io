@@ -1,63 +1,129 @@
-* {
-  margin: 0;
+
+
+body {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-areas: "sidebar content";
+  min-height: 100vh;
+}
+
+/* Csak az index oldalon legyen jobbra a sidebar */
+body.index-page,
+.galery-page,
+.photomaking-page {
+  grid-template-columns: 1fr 250px;
+  grid-template-areas: "content sidebar";
+}
+
+/* 
+.sidebar {
+  grid-area: sidebar;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-left: 1px solid rgb(142, 132, 132);
+}
+
+/* Index oldalon a sidebar jobbra kerül */
+body.index-page .sidebar {
+  border-right: none;
+  border-left: 1px solid rgb(142, 132, 132);
+}
+
+body.galery-page .sidebar {
+  border-right: none;
+  border-left: 1px solid rgb(142, 132, 132);
+}
+
+body.photomaking-page .sidebar {
+  border-right: none;
+  border-left: 1px solid rgb(142, 132, 132);
+}
+
+
+.sidebar nav ul {
+  list-style: none;
   padding: 0;
 }
 
+.sidebar nav li {
+  margin: 15px 0;
+}
+
+.sidebar nav a {
+  color: rgb(142, 132, 132);
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar nav a:hover {
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  color: #ffa400;
+  text-shadow: 2px 2px 5px white;
+}
+
+.main-content {
+  grid-area: content;
+}
+
 .about {
-  color: yellow;
+  text-align: center;
+  color: rgb(142, 132, 132);
 }
 .welcome {
-  display: grid;
-  box-sizing: border-box;
-  color: rgb(142, 132, 132);
+  border-bottom: 1px solid rgb(142, 132, 132);
   text-align: right;
-  margin: 2%;
+    color: #666;
+  margin: 1%;
+  padding: 1%;
 }
 
 .textcontainer {
   display: grid;
   font-size: 1.5em;
   box-sizing: border-box;
-  border: 3px solid white;
+  /* border: 3px solid white; */
   border-radius: 2px;
   max-width: 100vh;
   color: rgb(244, 234, 234);
-  text-align: center;
-  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* text-align: center; */
+  margin: 20px auto 0 55px;
   padding: 20px;
   /*   background-color: #000000; */
 
   opacity: 1;
 }
-.galery {
-  display: grid;
-  grid-auto-rows: 1fr;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 25px;
-    grid-template-areas:
-    "portrait"
-    "square"
-    "landscape";
-  justify-items: center;
-  width: 100%;
-  margin: 10px;
-  padding: 10px;
-}
+
 .portrait {
-  grid-area: portrait;
+  /* grid-area: portrait; */
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+  border-bottom: 1px solid rgb(142, 132, 132);
 }
 .square {
-  grid-area: square;
+  /* grid-area: square; */
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+  border-bottom: 1px solid rgb(142, 132, 132);
 }
 .landscape {
-  grid-area: landscape;
+  /* grid-area: landscape; */
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+  border-bottom: 1px solid rgb(142, 132, 132);
 }
 
 .galery a.portrait {
   display: inline-block;
-  width: 140px;
-  height: 210px;
+  width: 180px;
+  height: 250px;
   overflow: hidden;
   border: 1px solid black;
   border-radius: 4px;
@@ -65,10 +131,20 @@
   /* opacity: 0.9; */
 }
 
+.galery a.square {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: transform 0.2s;
+  /* opacity: 0.95; */
+}
 .galery a.landscape {
   display: inline-block;
-  width: 185px;
-  height: 140px;
+  width: 250px;
+  height: 180px;
   overflow: hidden;
   border: 1px solid black;
   border-radius: 4px;
@@ -76,31 +152,154 @@
   /* opacity: 0.9; */
 }
 
-.galery a.square {
-  display: inline-block;
-  width: 210px;
-  height: 210px;
-  overflow: hidden;
-  border: 1px solid black;
-  border-radius: 4px;
-  transition: transform 0.2s;
-  /* opacity: 0.95; */
-}
-
 .galery a:hover {
-  transform: scale(1.05);
-  border-color: white;
+  transform: scale(1.1);
+  /* border: 2px solid white; */
+  opacity: 1;
 }
 
 .galery a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
-.galery-title {
-  text-align: right;
-  font-size: 3em;
-  color: #666;
-  margin: 2%;
+/* Improved loading states */
+.galery a img[loading="lazy"] {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.galery a img[loading="lazy"].loaded {
+  opacity: 1;
+}
+
+footer {
+  text-decoration: none;
+  bottom: 0;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  text-align: center;
+  font-size: 15px;
+  margin: 6px;
+  padding: 10px;
+  background-color: black;
+  opacity: 0.5;
+  color: rgb(142, 132, 132);
+  /*border: 1px solid #00640f;*/
+  border-radius: 4px;
+}
+
+footer a:hover {
+  color: #ffa400;
+  text-shadow: 2px 2px 5px white;
+  transform: scale(1.2);
+  filter: brightness(1.3);
+  transition: transform 0.5s ease;
+  /* text-shadow: 1px 1px 3px grey; */
+  /* font-size: 1.2em; */
+}
+
+.audio-player {
+  width: 100%;
+  margin: 20px 0;
+  opacity: 0.1;
+}
+
+.audio-player:hover {
+  opacity: 1;
+}
+
+/* Lightbox stílusok */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox-caption {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 20px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 20px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f1f1f1;
+}
+
+.section {
+  color: rgb(142, 132, 132);
 }
