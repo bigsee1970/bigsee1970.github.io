@@ -30,20 +30,18 @@
         top: 0;
         right: 0;
         height: 100vh;
-        width: 220px;
+        width: 10vw;
         z-index: 1000;
-        background: rgba(0,0,0,0.7);
+        background: rgba(0, 0, 0, 0.7);
         color: #fff;
         overflow-y: auto;
+        margin: 0;
       }
-      .main-content {
-        margin-right: 220px;
-      }
+      
       .welcome {
         position: sticky;
         top: 0;
         z-index: 999;
-        background: rgba(0,0,0,0.5);
         padding: 1rem;
       }
     </style>
@@ -52,30 +50,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
       </head>
   
   <body class="galery-page">
-    <div class="sidebar">
-      <nav>
-        <ul>
-          <li><a href="index.html">Főoldal</a></li>
-          <li><a href="photomaking.html">Fotózás</a></li>
-          <li><a href="#about">Rólam</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </nav>
-      <!-- <footer class="footer">
-        <a href="facebook.com">FB logo</a>
-        <a href="instagram.com">Insta logo</a>
-        <a href="www.github.com">Git logo</a>
-
-        <br />
-        <span>&copy; 2025 - levaikaroly - Minden jog fenntartva!</span>
-      </footer> -->
-    </div>
+    
 
     <div class="main-content">
-      <div class="welcome"><h1>Galériám</h1></div>
+      <div class="welcome"><h1 class="animate__animated animate__fadeInLeft">Photo-im</h1></div>
+      
 
       <div class="galery">
         <div class="portrait">
@@ -120,14 +106,6 @@
               title="Csendes napnyugta"
             />
           </a>
-          <a href="/BW/P/P_image006.png" class="portrait">
-            <img
-              src="/BW/P/P_image006.png"
-              alt="Ablak"
-              loading="lazy"
-              title="Ablak"
-            />
-          </a>
         </div>
 
         <div class="square">
@@ -170,14 +148,7 @@
               title="Leveled jött!"
             />
           </a>
-          <a href="/BW/S/S_20221207_152630-01-01H.png" class="square">
-            <img
-              src="/BW/S/S_20221207_152630-01-01H.png"
-              alt="Deák téri óra"
-              loading="lazy"
-              title="Deák téri óra"
-            />
-          </a>
+          
         </div>
 
         <div class="landscape">
@@ -206,14 +177,7 @@
 
 
           </a>
-          <a href="/BW/L/L1000025720_1280.jpg" class="landscape">
-            <img
-              src="/BW/L/L1000025720_1280.jpg"
-              alt="Velence"
-              loading="lazy"
-              title="Velence"
-            />
-          </a>
+          
           <a href="/BW/L/LBW_image004.png" class="landscape">
             <img
               src="/BW/L/LBW_image004.png"
@@ -233,7 +197,24 @@
         </div>
       </div>
     </div>
+<div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="photomaking.html">Fotózás</a></li>
+          
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <!-- <footer class="footer">
+        <a href="facebook.com">FB logo</a>
+        <a href="instagram.com">Insta logo</a>
+        <a href="www.github.com">Git logo</a>
 
+        <br />
+        <span>&copy; 2025 - levaikaroly - Minden jog fenntartva!</span>
+      </footer> -->
+    </div>
     <!-- Lightbox -->
     <div id="lightbox" class="lightbox">
       <div class="lightbox-content">
