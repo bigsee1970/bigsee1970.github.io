@@ -13,6 +13,16 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <style>
+      .section-box {
+        background: rgba(0,0,0,0.85);
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+        padding: 32px 24px;
+        margin: 32px auto;
+        max-width: 900px;
+        border: 1px solid #ffa400;
+        color: #f4eaea;
+      }
       body {
         background-image: url("kepek/pexels-photo-3616964.webp");
         background-repeat: no-repeat;
@@ -32,7 +42,12 @@
         overflow-y: auto;
         margin: 0;
       }
-      
+       .welcome {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        padding: 1rem;
+      }
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -64,7 +79,7 @@
       <div class="welcome">
         <h1 class="animate__animated animate__fadeInLeft">Photo-zás</h1>
       </div>
-      <section class="textcontainer">
+  <section class="textcontainer section-box">
         <h2 class="about">A fényképezés alapjai</h2>
 
         <div class="photomaking-text">
@@ -74,7 +89,7 @@
             megörökítése. Célja lehet az emlékmegőrzés, a dokumentálás, a
             művészi kifejezés vagy akár tudományos megfigyelés. A mai digitális
             korban mindenki zsebében ott lapul egy fényképezésre alkalmas eszköz
-            – a mobiltelefon –, de a fényképezés alapelvei ugyanazok maradtak,
+            – minimum a mobiltelefonja –, de a fényképezés alapelvei ugyanazok maradtak,
             mint az analóg korszakban.
           </p>
           <img
@@ -87,8 +102,9 @@
           A lényeg, hogy örömünket leljük benne, legyen ez egy hobbi, egy
           életérzés, vagy szórakozás, amivel adott esetben ki is fejezhetjük
           magunkat.
-        </p>
-        <hr />
+        </p></section>
+        
+  <section class="section-box">
         <h2 class="about">A fényképezés technikai alapfogalmai</h2>
 
         <h3>Záridő (Shutter Speed)</h3>
@@ -149,8 +165,8 @@
           adhat.
         </p>
 
-        <img src="https://example.com/iso.jpg" alt="ISO értékek hatása" />
-
+       </section>
+  <section class="section-box">
         <h2>2. Kompozíciós alapelvek</h2>
 
         <h3>Harmadolási szabály (Rule of Thirds)</h3>
@@ -176,8 +192,8 @@
           src="https://example.com/leadinglines.jpg"
           alt="Vezető vonalak egy fotón"
         />
-
-        <h2>3. Fény és árnyék szerepe</h2>
+</section>
+  <section class="section-box"><h2>3. Fény és árnyék szerepe</h2>
 
         <p>
           A fény a fényképezés lényege. A különböző fényviszonyok különböző
@@ -192,9 +208,8 @@
           A mesterséges fényforrások (pl. vaku, LED-lámpák) kontrolláltabbak, és
           bármikor rendelkezésre állnak, de igénylik a világítás ismeretét.
         </p>
-
-        <img src="https://example.com/light.jpg" alt="Fények és árnyékok" />
-
+</section>
+  <section class="section-box">
         <h2>4. Gyakorlati példák</h2>
 
         <h3>Portréfotózás</h3>
@@ -218,8 +233,8 @@
           kulcsfontosságú.
         </p>
 
-        <img src="https://example.com/macro.jpg" alt="Makrófotó egy virágról" />
-
+        </section>
+<section class="section-box">
         <h2>5. Digitális utómunka</h2>
         <p>
           A készült képeket - elvárás szerint - lehet azonnal megosztani, szinte
@@ -229,8 +244,8 @@
           programok: Adobe Lightroom, Photoshop, Snapseed, GIMP.
         </p>
 
-        <img src="https://example.com/editing.jpg" alt="Fotó utómunka közben" />
-
+       </section>
+<section class="section-box">
         <h2>Összefoglalás</h2>
         <p>
           A fényképezés egyáltalán nem csak technikai tudás, hanem ötletesség,
@@ -254,6 +269,7 @@
           alt="https://kep.cdn.indexvas.hu/1/0/2062/20622/206220/20622037_2df1dfb8f8e741ed33a3d83b67bee318_wm.jpg"
           id="aranyora"
           title="https://kep.cdn.indexvas.hu/1/0/2062/20622/206220/20622037_2df1dfb8f8e741ed33a3d83b67bee318_wm.jpg"
+          
         />
         <p id="goldenhours">
           Ez a fény tökéletes a fotózáshoz, mivel szép, egyenletes megvilágítást
