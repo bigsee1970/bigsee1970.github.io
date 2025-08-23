@@ -1,3 +1,11 @@
+#golden {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#note a {
+  text-decoration: none !important;
+}
 body {
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -43,7 +51,7 @@ body.photomaking-page .sidebar {
 }
 
 .sidebar nav li {
-  margin: 15px 0;
+  margin: 12%;
 }
 
 .sidebar nav a {
@@ -63,8 +71,10 @@ body.photomaking-page .sidebar {
 }
 
 .bookmarks {
+  color: rgb(142, 132, 132);
   text-decoration: none;
   list-style: none;
+  margin: 12%;
 }
 
 .main-content {
@@ -76,10 +86,10 @@ body.photomaking-page .sidebar {
   color: rgb(142, 132, 132);
 }
 .welcome {
-  border-bottom: 1px solid rgb(142, 132, 132);
+  /* border-bottom: 1px solid rgb(142, 132, 132); */
   text-align: right;
   color: #666;
-  /* margin: 1%; */
+  margin: 1%;
   padding: 1%;
 }
 
@@ -88,14 +98,14 @@ body.photomaking-page .sidebar {
   font-size: 1.5em;
   box-sizing: border-box;
   border-radius: 18px;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgb(142, 132, 132);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(142, 132, 132);
   max-width: 100vh;
   color: rgb(244, 234, 234);
   background-color: rgba(0, 0, 0, 0.8);
   /* text-align: center; */
   margin: 20px auto 0 auto;
-  padding: 20px;
+  padding: 25px;
   /*   background-color: #000000; */
 
   opacity: 1;
@@ -169,12 +179,12 @@ body.photomaking-page .sidebar {
 }
 
 /* Improved loading states */
-.galery a img[loading="lazy"] {
+.galery a img[loading="eager"] {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 
-.galery a img[loading="lazy"].loaded {
+.galery a img[loading="eager"].loaded {
   opacity: 1;
 }
 
@@ -203,16 +213,6 @@ footer a:hover {
   transition: transform 0.5s ease;
   text-shadow: 1px 1px 3px grey;
   font-size: 1.2em;
-}
-
-.audio-player {
-  width: 100%;
-  margin: 20px 0;
-  opacity: 0.1;
-}
-
-.audio-player:hover {
-  opacity: 1;
 }
 
 /* Lightbox stílusok */
@@ -317,7 +317,7 @@ footer a:hover {
   gap: 20px;
 }
 
-.fenykepezo .gyors {
+.DSLR {
   flex-shrink: 0;
   margin-left: auto;
   margin-top: 50px;
@@ -325,6 +325,34 @@ footer a:hover {
   height: auto;
 }
 
+.quick {
+  
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px #ffa400;
+  /*   margin-right: 5%;
+  margin-bottom: 3%; */
+  margin: auto;
+  float: left;
+}
+
+.slow {
+  
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px #ffa400;
+  /* margin-right: 5%;
+  margin-top: 5%; */
+  margin: auto;
+}
+
+.golden {
+  
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px #ffa400;
+    margin: auto;
+}
+.shut {
+  margin: 5%;
+}
 /* Style all font awesome icons */
 .fa {
   padding: 12px;
@@ -398,3 +426,17 @@ footer a:hover {
   border-radius: 80px;
 }
 
+.footnote {
+  font-size: 0.75em;
+  color: #aaa;
+  background: rgba(0, 0, 0, 0.05);
+  border-left: 3px solid #ffa400;
+  padding: 6px 12px;
+  margin: 12px 0;
+  font-style: italic;
+  border-radius: 6px;
+}
+
+#bookmark a {
+  text-decoration: none;
+}
