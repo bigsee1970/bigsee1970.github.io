@@ -1,0 +1,46 @@
+.body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  /* gap: 20px; */
+  
+}
+
+.head {
+  box-sizing: border-box;
+  border: 2px solid red;
+  margin: 3%;
+  margin-top: 5%;
+  padding: 3%;
+}
+
+h1 {
+  padding: 5px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  border: 2px solid green;
+  margin: 3%;
+  padding: 3%;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+p {
+  box-sizing: border-box;
+  border: 2px solid purple;
+  margin: 3%;
+  padding: 3%;
+}
+
+.img_me {
+    display: float;
+    float: left;
+    margin: 0.5%;
+}
