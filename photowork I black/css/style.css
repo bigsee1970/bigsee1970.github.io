@@ -1,9 +1,163 @@
+@media screen and (max-width: 991px) {
+  body {
+    display: block !important;
+    grid-template-columns: none !important;
+    grid-template-areas: none !important;
+    min-width: 100vw !important;
+    width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  .sidebar {
+    display: none !important;
+  }
+  #mobileMenu {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: rgb(142, 132, 132);
+    z-index: 4001;
+  }
+}
+@media screen and (max-width: 991px) {
+  #powered_byM {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .about {
+    font-size: 3em;
+  }
+  .textcontainer {
+    max-width: none !important;
+    width: 98vw !important;
+    font-size: 1em !important;
+    margin: 2vw auto !important;
+    padding: 1em !important;
+    box-sizing: border-box;
+  }
+  .section-box {
+    max-width: none !important;
+    width: 98vw !important;
+    font-size: 1em !important;
+    margin: 2vw auto !important;
+    padding: 1em !important;
+    box-sizing: border-box;
+  }
+  .bookmarksM {
+    display: block !important;
+    margin: 2vw auto !important;
+    background: rgba(142, 132, 132, 0.95);
+    color: #ffa400 !important;
+    border-radius: 16px;
+    padding: 1em 0.5em;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 90vw;
+    max-width: 95vw;
+  }
+  .bookmarksM select {
+    width: 80vw;
+    max-width: 90vw;
+    font-size: 1.1em;
+    margin: 0.5em auto;
+    display: block;
+    background: #fff8e1;
+    color: #333;
+    border-radius: 8px;
+    border: 1px solid #ffa400;
+    padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footerM {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(142, 132, 132);
+    z-index: 3000;
+    padding: 0.5em 0;
+    margin: 0 auto;
+    width: 95vw;
+
+    text-align: center;
+    font-size: 0.7em;
+    color: #f9f3e7;
+  }
+}
+
+.bookmarksM {
+  display: none;
+}
+.footerM {
+  display: none !important;
+}
+
+/* Centered image style */
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px #ffa400;
+  border: 1px solid #ffa400;
+}
+/* Carousel bal oldali box stílus egységesen a contact-box-hoz */
+.carousel-box {
+  background: black;
+  border-radius: 18px;
+  box-shadow: 2px 2px 5px #ffa400;
+  padding: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1.5%;
+  width: 40%;
+  height: 50%;
+  border: 1px solid #ffa400;
+  color: #f4eaea;
+
+  opacity: 0.78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.carousel-inner img {
+  max-width: 70%;
+  max-height: 320px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: contain;
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 400px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+#advice {
+  flex-direction: column;
+  font-size: 1em;
+  font-style: italic;
+  color: #da9413;
+}
+
 #golden {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-#note a {
+a {
   text-decoration: none !important;
 }
 body {
@@ -13,7 +167,6 @@ body {
   min-height: 100vh;
 }
 
-/* Csak az index oldalon legyen jobbra a sidebar */
 body.index-page,
 .galery-page,
 .photomaking-page {
@@ -21,28 +174,27 @@ body.index-page,
   grid-template-areas: "content sidebar";
 }
 
-/* 
-.sidebar {
-  grid-area: sidebar;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  border-left: 1px solid rgb(142, 132, 132);
-}
-
-/* Index oldalon a sidebar jobbra kerül */
 body.index-page .sidebar {
   border-right: none;
-  border-left: 1px solid rgb(142, 132, 132);
+  border-left: 3px solid #ffa400;
 }
 
 body.galery-page .sidebar {
   border-right: none;
-  border-left: 1px solid rgb(142, 132, 132);
+  border-left: 3px solid #ffa400;
 }
 
 body.photomaking-page .sidebar {
   border-right: none;
-  border-left: 1px solid rgb(142, 132, 132);
+  border-left: 3px solid #ffa400;
+}
+
+body .sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: none;
+  border-left: 3px solid #ffa400;
 }
 
 .sidebar nav ul {
@@ -57,7 +209,7 @@ body.photomaking-page .sidebar {
 .sidebar nav a {
   color: rgb(142, 132, 132);
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.8em;
   display: block;
   padding: 10px;
   border-radius: 4px;
@@ -65,16 +217,17 @@ body.photomaking-page .sidebar {
 }
 
 .sidebar nav a:hover {
-  /* background-color: rgba(255, 255, 255, 0.1); */
   color: #ffa400;
   text-shadow: 2px 2px 2px #ffa400;
 }
 
 .bookmarks {
+  text-align: center;
+  font-size: 0.7em;
   color: rgb(142, 132, 132);
   text-decoration: none;
   list-style: none;
-  margin: 12%;
+  margin: 0;
 }
 
 .main-content {
@@ -82,14 +235,15 @@ body.photomaking-page .sidebar {
 }
 
 .about {
+  display: flex;
   text-align: center;
-  color: rgb(142, 132, 132);
+  color: white;
 }
 .welcome {
-  /* border-bottom: 1px solid rgb(142, 132, 132); */
+  border-bottom: 1px solid #ffa400;
   text-align: right;
   color: #666;
-  margin: 1%;
+  margin: 0.8% 3% 0.5% 4%;
   padding: 1%;
 }
 
@@ -98,35 +252,29 @@ body.photomaking-page .sidebar {
   font-size: 1.5em;
   box-sizing: border-box;
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 6px #ffa400;
   border: 1px solid rgb(142, 132, 132);
-  max-width: 100vh;
+  max-width: 130vh;
   color: rgb(244, 234, 234);
   background-color: rgba(0, 0, 0, 0.8);
-  /* text-align: center; */
-  margin: 20px auto 0 auto;
-  padding: 25px;
-  /*   background-color: #000000; */
-
+  margin: 3% auto 3% auto;
+  padding: 2.5%;
   opacity: 1;
 }
 
 .portrait {
-  /* grid-area: portrait; */
   display: flex;
   justify-content: space-around;
   margin: 1%;
   border-bottom: 1px solid rgb(142, 132, 132);
 }
 .square {
-  /* grid-area: square; */
   display: flex;
   justify-content: space-around;
   margin: 1%;
   border-bottom: 1px solid rgb(142, 132, 132);
 }
 .landscape {
-  /* grid-area: landscape; */
   display: flex;
   justify-content: space-around;
   margin: 1%;
@@ -152,7 +300,6 @@ body.photomaking-page .sidebar {
   border: 1px solid black;
   border-radius: 4px;
   transition: transform 0.2s;
-  /* opacity: 0.95; */
 }
 .galery a.landscape {
   display: inline-block;
@@ -162,12 +309,11 @@ body.photomaking-page .sidebar {
   border: 1px solid black;
   border-radius: 4px;
   transition: transform 0.2s;
-  /* opacity: 0.9; */
 }
 
 .galery a:hover {
   transform: scale(1.1);
-  /* border: 2px solid white; */
+
   opacity: 1;
 }
 
@@ -178,7 +324,6 @@ body.photomaking-page .sidebar {
   transition: opacity 0.3s ease;
 }
 
-/* Improved loading states */
 .galery a img[loading="eager"] {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -188,33 +333,30 @@ body.photomaking-page .sidebar {
   opacity: 1;
 }
 
-footer {
-  text-decoration: none;
-  bottom: 0;
-  max-width: 100%;
-  left: 0;
-  right: 0;
-  z-index: 1000;
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.8em;
   text-align: center;
-  font-size: 15px;
-  margin: 6px;
-  padding: 10px;
-  background-color: black;
-  opacity: 0.5;
-  color: blue;
-  border-top: 2px solid rgb(142, 132, 132);
-}
-
-footer a:hover {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 30vh;
+  width: 11vw;
+  z-index: 1000;
+  background: none;
   color: #ffa400;
-
-  transform: scale(1.2);
-  filter: brightness(1.3);
-  transition: transform 0.5s ease;
-  text-shadow: 1px 1px 3px grey;
-  font-size: 1.2em;
+  overflow-y: auto;
+  margin: 0;
+  border-left: 3px solid #ffa400;
 }
 
+.powered-by {
+  margin: auto;
+
+  font-size: 0.9em;
+}
 /* Lightbox stílusok */
 .lightbox {
   display: none;
@@ -235,12 +377,42 @@ footer a:hover {
   max-width: 1200px;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  .galery .portrait,
+  .galery .square,
+  .galery .landscape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-items: center;
+    align-items: start;
+  }
+  .galery a.portrait,
+  .galery a.square,
+  .galery a.landscape {
+    width: 100%;
+    max-width: 98vw;
+    height: auto;
+    margin: 0;
+    border-radius: 8px;
+  }
+  .galery a img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 }
 
 .lightbox-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
   max-height: 80vh;
   object-fit: contain;
@@ -268,7 +440,7 @@ footer a:hover {
 
 .close:hover,
 .close:focus {
-  color: orange;
+  color: #ffa400;
   text-decoration: none;
 }
 
@@ -313,7 +485,7 @@ footer a:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
 }
 
@@ -325,85 +497,40 @@ footer a:hover {
   height: auto;
 }
 
-.quick {
-  
-  border-radius: 12px;
-  box-shadow: 2px 2px 10px #ffa400;
-  /*   margin-right: 5%;
-  margin-bottom: 3%; */
-  margin: auto;
-  float: left;
-}
-
+.quick,
 .slow {
-  
   border-radius: 12px;
   box-shadow: 2px 2px 10px #ffa400;
-  /* margin-right: 5%;
-  margin-top: 5%; */
-  margin: auto;
+
+  margin: 5%;
 }
 
 .golden {
-  
   border-radius: 12px;
   box-shadow: 2px 2px 10px #ffa400;
-    margin: auto;
-}
-.shut {
-  margin: 5%;
-}
-/* Style all font awesome icons */
-.fa {
-  padding: 12px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+  margin: auto;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 1;
-  background-color: blue;
+.fa a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
   color: #ffa400;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa fa-facebook {
-  background: rgb(142, 132, 132);
-  color: black;
-}
-
-/* Twitter */
-.fa fa-instagram {
-  background: rgb(142, 132, 132);
-  color: black;
-}
-
-/* Github */
-.fa fa-github {
-  background: rgb(142, 132, 132);
-  color: black;
+  text-shadow: 2px 2px 2px #ffa400;
 }
 
 .cimfoto {
   box-sizing: border-box;
-  border-radius: 4px;
+  box-shadow: 4px 4px 10px #ffa400;
+  border-radius: 14px;
   display: float;
   margin: 30px;
   float: right;
-  max-height: 200px;
-  opacity: 0.9;
+  max-height: 65%;
 }
 
 .hy {
   display: flex;
-  align-items: center; /* függőlegesen középre igazítja a szöveget a kép mellett */
-  gap: 20px; /* távolság a kép és szöveg között */
+  align-items: center;
+  gap: 20px;
 }
 
 .gitqr {
@@ -427,16 +554,41 @@ footer a:hover {
 }
 
 .footnote {
-  font-size: 0.75em;
+  box-sizing: border-box;
+
+  width: 80%;
+  font-size: 0.9em;
   color: #aaa;
-  background: rgba(0, 0, 0, 0.05);
-  border-left: 3px solid #ffa400;
-  padding: 6px 12px;
-  margin: 12px 0;
+  background: rgba(0, 0, 0, 0.7);
+  border-left: 1px solid #ffa400;
+
+  padding: 12px 12px;
+  margin: auto;
   font-style: italic;
   border-radius: 6px;
 }
-
-#bookmark a {
+#fnote {
+  /*  display: flex;
+  
+  /* justify-content: center; */
+  font-size: 1em;
+  /* border-left: 1px solid #ffa400;
+  border-right: 1px solid #ffa400; */
+  /* margin: 2% 5% 2% 5%;
+ */
+}
+*/ #bookmark a {
   text-decoration: none;
+}
+
+#bookm {
+  font-size: 1.4em;
+}
+
+.navbarM {
+  display: none;
+}
+
+.add {
+  color: #ffa400;
 }
