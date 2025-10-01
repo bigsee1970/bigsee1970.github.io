@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--AI-al készíttetve!-->
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adatvédelem</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #fffbe6;
+        color: #333;
+        text-align: center;
+        padding: 60px;
+      }
+
+      h1 {
+        font-size: 50px;
+        color: #ff9900;
+      }
+
+      p {
+        font-size: 22px;
+        margin-top: 20px;
+      }
+
+      .emoji {
+        font-size: 80px;
+        animation: swing 2s infinite ease-in-out;
+        display: inline-block;
+        transform-origin: 50% 50%;
+      }
+
+      @keyframes swing {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(10deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        75% {
+          transform: rotate(-10deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      .back-button {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 12px 24px;
+        background-color: #ff9900;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        animation: pulse 1.5s infinite;
+        transition: background-color 0.3s;
+      }
+
+      .back-button:hover {
+        background-color: #e68a00;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="emoji">🚧</div>
+    <h1>Az oldal fejlesztés alatt áll</h1>
+    <p>Dolgozunk rajta, hogy minél hamarabb elkészüljön!</p>
+    <p>Kérjük, nézz vissza később.</p>
+
+    <a href="index.html" class="back-button">⬅️ Vissza a főoldalra</a>
+  </body>
+</html>

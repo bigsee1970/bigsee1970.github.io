@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+}
+
+.container {
+  text-align: center;
+  background-color: #ece9e9;
+  border-radius: 10px;
+  box-shadow: lightgreen 10px 10px 10px;
+  padding: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.options div img, #gepvalasztkep {
+  width: 100px;
+  
+}
+
+.options div {
+  margin-right: 5px;
+}
+
+#tePontod, #gepPont {
+    color: red;
+    font-weight: bold;
+    text-shadow: rgb(247, 87, 87) 2px 2px 2px;
+}
+

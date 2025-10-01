@@ -1,95 +1,630 @@
 <!DOCTYPE html>
-<html lang="en" style="font-family: Arial, sans-serif; background: #fff; color: #222;"></html>
-<head>
-    <meta charset="UTF-8">
-    <title>Contact - Photowork II White</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Minden, amit én látok a fotózásban, röviden, tömören, lényegre törően"
+    />
+    <meta name="keywords" content="photo, composition, jpeg, DSLR, pictures" />
+    <meta name="author" content="bigsee1970" />
+    <title>Lévai Photo</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <style>
+      @media screen and (max-width: 991px) {
+        
+        /* .welcome {
+          position: static !important;
+          top: auto !important;
+          z-index: auto !important;
+        } */
+        .contact-box {
+          margin-right: 0 !important;
+        }
         body {
-            font-family: Arial, sans-serif;
-            background: #fff;
-            color: #222;
-            margin: 0;
-            padding: 0;
-    
-        background-image: url("kepek/camera-lens-black-background-dark-wallpaper-preview.jpg");
+          background-image: none !important;
+          background-color: rgb(142, 132, 132) !important;
+        }
+        .contact-box {
+          max-height: none !important;
+          min-height: 80vh !important;
+          overflow-y: visible !important;
+        }
+        .contact-layout {
+          flex-direction: column !important;
+          align-items: stretch !important;
+          align-content: center;
+          max-width: 100vw !important;
+          overflow-x: hidden !important;
+          padding: 0 8px !important;
+
+          box-sizing: border-box;
+        }
+        
+        .sidebar {
+          display: none;
+        }
+
+        .carousel-box {
+          display: none;
+        }
+
+        .welcome {
+          margin: 0;
+          text-align: center;
+          font-size: 1.3em;
+          width: 100vw;
+          max-width: 100vw;
+          color: rgb(81, 81, 81);
+          text-shadow: 2px 2px 2px #ffa400;
+          position: static !important;
+          top: auto !important;
+          z-index: auto !important;
+        }
+
+        .main-content {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .footerM {
+          display: flex !important;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+
+          width: 100%;
+          border-radius: 8px;
+          margin: 5px 5px 5px 5px;
+
+          z-index: 3000;
+          opacity: 0.6;
+          background-color: rgb(142, 132, 132);
+        }
+        .navbarM {
+          display: flex;
+          /* flex-direction: row; */
+          width: 85vw;
+          /* justify-content: center; */
+          align-items: center;
+          /* gap: 1em; */
+        }
+
+        .navbarM a {
+          display: inline-block;
+          margin: 0 0.5em;
+        }
+
+        .navbarM nav ul {
+          list-style: none;
+          text-decoration: none;
+        }
+
+        .navbarM nav a {
+          color: #ffa400;
+          text-decoration: none;
+          font-size: 1em;
+          /* display: block; */
+          padding: 10px;
+          border-radius: 4px;
+          transition: background-color 0.3s;
+        }
+      }
+      body {
+        background-image: url("bw/free-photo-of-camera-lens-in-black-background_1920.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
       }
-        
-        .container {
-            max-width: 500px;
-            margin: 40px auto;
-            padding: 24px;
-            background: #f7f7f7;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 24px;
-            font-size: 2em;
-            letter-spacing: 1px;
-        }
-        form label {
-            display: block;
-            margin-bottom: 6px;
-            font-weight: bold;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1em;
-        }
-        form button {
-            background: #222;
-            color: #fff;
-            border: none;
-            padding: 10px 24px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-        form button:hover {
-            background: #ffa400;
-            color: #555;
-        }
-        .contact-info {
-            margin-top: 32px;
-            text-align: center;
-            font-size: 1em;
-            color: #555;
-        }
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 11vw;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        overflow-y: auto;
+        margin: 0;
+      }
+      .contact-layout {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: 32px;
+        align-items: center; /* függőlegesen középre */
+        justify-content: center;
+
+        min-height: 100%; /* teljes magasság */
+        max-width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .contact-box {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        background: black;
+        border-radius: 18px;
+        box-shadow: 2px 2px 5px #ffa400;
+        padding: 35px;
+        margin-left: 0;
+        margin-right: 5%;
+        margin-top: 1%;
+        max-width: 100vw;
+        max-height: 100vh;
+        border: 1px solid #ffa400;
+        color: #f4eaea;
+        font-size: 1em;
+        opacity: 0.78;
+      }
+
+      form label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+      }
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+      }
+      form button {
+        background: #222;
+        color: #fff;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      form button:hover {
+        background: #ffa400;
+        color: black;
+      }
+
+      .contact-info {
+        margin-top: 1%;
+        margin-bottom: 2%;
+        text-align: center;
+        font-size: 0.9em;
+        color: #ffa400;
+        /* font-style: italic; */
+      }
+      .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px; /* nagyobb távolság az ikonok között */
+        padding: 16px 0;
+        margin: 18px 0;
+      }
+      .social i {
+        font-size: 40px;
+        padding: 0 8px; /* kis oldaltávolság minden ikonhoz */
+      }
+      .social a:hover {
+        color: #ffa400;
+      }
+      .map-container {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin: 0.5% 0;
+      }
+      .mapsocial {
+        display: flex;
+        justify-content: space-around;
+        gap: 25px;
+      }
+
+      .phone {
+        text-decoration: none !important;
+        list-style: none !important;
+        font-style: normal;
+        color: #ffa400;
+      }
+      .carousel-inner {
+        height: 320px;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+      }
+
+      .carousel-inner img {
+        max-width: 70%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 12px;
+      }
+
+      .textcontainer.section-box {
+        flex: 1;
+        margin-left: auto;
+      }
+
+      .likes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        gap: 10px;
+      }
+      .like-btn {
+        background: #fff;
+        color: #ffa400;
+        border: 2px solid #ffa400;
+        border-radius: 30px;
+        padding: 10px 24px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s, transform 0.1s;
+        box-shadow: 0 2px 8px #ffa400;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .like-btn:hover {
+        background: #ffa400;
+        color: #fff;
+        transform: scale(1.08);
+      }
+      #szamlalo {
+        margin: 15px;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #ffa400;
+        letter-spacing: 2px;
+      }
+      .contact-box h3 {
+        text-align: center;
+      }
     </style>
-</head>
-<body>
-    
-    <div class="container">
-        <h1>Kapcsolat</h1>
-        <form>
-            <label for="name">Név</label>
-            <input type="text" id="name" name="name" required>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="index-page">
+    <div class="main-content">
+      <div class="welcome">
+        <h1 class="animate__animated animate__fadeInLeft">Photo-link</h1>
+      </div>
+      <div class="navbarM">
+        <nav>
+          <ul>
+            <div>
+              <li>
+                <a href="index.html">Főoldal</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
 
-            <label for="message">Üzenet</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        <nav>
+          <ul>
+            <div>
+              <li>
+                <a href="galery.html">Galéria</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul>
+            <div>
+              <li>
+                <a href="photomaking.html">Fotózás</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <div class="contact-layout">
+        <div class="carousel-box">
+          <div
+            id="carouselExample"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-interval="5000"
+            style="
+              background: rgba(0, 0, 0, 0.7);
+              padding: 24px;
+              min-width: 320px;
+              max-width: 50vh;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+            "
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="bw/P/chill.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/S/glass.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/L/boss.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/P/columns.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/S/cat.jpeg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/L/glasses.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/P/smog.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/S/flower.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/L/boss.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/P/windows.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/S/leaf.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/L/port.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/P/winter.jpeg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/S/lock.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/L/train.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/P/wood.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/S/paw.jpg" alt="képek a galériából" />
+              </div>
+              <div class="carousel-item">
+                <img src="bw/L/volt.jpg" alt="képek a galériából" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="contact-box">
+          <h3 class="text-align=center">Kapcsolat</h3>
+
+          <form>
+            <label for="name" class="info">Név:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="név"
+            />
+
+            <label for="email" class="info">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="valami@valami.com"
+            />
+
+            <label for="message" class="info">Üzenet:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="ha üzenni szeretnél valamit!"
+            ></textarea>
 
             <button type="submit">Küld</button>
-        </form>
-        <div class="contact-info">
-            <p>Email: info@L_photowork2white.com</p>
-            <p>Phone: +36 30 (10-1)97 (2*3)6(2+2+2+2)2 </p>
-            <p>Address: Budapest, Hungary</p>
-        </div>
+          </form>
+          <div class="mapsocial">
+            <div class="social">
+              <a href="https://www.facebook.com" target="blank">
+                <i
+                  class="fa fa-facebook"
+                  style="font-size: 40px"
+                  title="Facebook"
+                ></i
+              ></a>
+
+              <a href="https://www.instagram.com/levaikaroly/" target="blank">
+                <i
+                  class="fa fa-instagram"
+                  style="font-size: 40px"
+                  title="Instagram"
+                ></i
+              ></a>
+
+              <a href="https://www.github.com" target="blank"
+                ><i
+                  class="fa fa-github"
+                  style="font-size: 40px"
+                  title="GitHub"
+                ></i
+              ></a>
+            </div>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21488.114167967644!2d16.58355634462893!3d47.684142808249526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1756190027722!5m2!1shu!2shu"
+                width="100%"
+                height="auto"
+                style="
+                  border: 3px solid #ffa400;
+                  border-radius: 4px;
+                  box-shadow: 2px 2px 5px #ffa400;
+                "
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <a href="email:info@L_photowork.com" class="phone"
+              ><p>Email: info@L_photowork.com</p></a
+            >
+            <a href="tel:+36 30 (10-1)97 (2*3)6(2+2+2+2)2" class="phone"
+              ><p>Phone: +36 30 (10-1)97 (2*3)6(2+2+2+2)2</p></a
+            >
+            <p>Address: Sopron, Hungary</p>
+          </div>
+        </section>
+      </div>
+      <div class="footerM">
+        <footerM>
+          <p class="spanM">
+            &copy; 2025 - levaikaroly - Minden jog fenntartva!
+          </p>
+
+          <div id="powered_byM">
+            <p>Inspired & Powered by</p>
+
+            <a
+              href="http://www.prooktatas.hu/"
+              target="_blank"
+              class="animate__animated animate__flash animate__repeat -2"
+            >
+              <img
+                style="height: auto; width: 75%; cursor: pointer"
+                src="bw/pro.png"
+              />
+            </a>
+          </div>
+        </footerM>
+      </div>
     </div>
 
-    
-</body>
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="animate__animated animate__lightSpeedInRight"
+              >Főoldal</a
+            >
+          </li>
+          <li>
+            <a
+              href="galery.html"
+              class="animate__animated animate__lightSpeedInRight"
+              >Galéria</a
+            >
+          </li>
+          <li>
+            <a
+              href="photomaking.html"
+              class="animate__animated animate__lightSpeedInRight"
+              >Fotózás</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="likes">
+        <div class="add">
+          <p>Ha tetszett az oldal...</p>
+        </div>
+        <!-- Csak a böngészőben tárolja a like-okat! -->
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+          "
+        >
+          <button
+            class="like-btn animate__animated animate__swing"
+            onclick="like()"
+          >
+            <span style="font-size: 1.4em">👍</span> Lájk!
+          </button>
+          <span id="szamlalo">0</span>
+          <script>
+            let szam = localStorage.getItem("likeSzamlalo");
+            if (szam === null) {
+              szam = 0;
+            } else {
+              szam = parseInt(szam);
+            }
+            document.getElementById("szamlalo").innerText = szam;
+            function like() {
+              szam++;
+              document.getElementById("szamlalo").innerText = szam;
+              localStorage.setItem("likeSzamlalo", szam);
+            }
+          </script>
+        </div>
+      </div>
+      <div class="footer">
+        <footer>
+          <p><span>&copy; 2025 - levaikaroly - Minden jog fenntartva!</span></p>
+
+          <div id="powered_by">
+            <p>Inspired & Powered by</p>
+
+            <a
+              href="http://www.prooktatas.hu/"
+              target="_blank"
+              class="animate__animated animate__flash animate__repeat -2"
+            >
+              <img
+                style="height: auto; width: 75%; cursor: pointer"
+                src="bw/pro.png"
+              />
+            </a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

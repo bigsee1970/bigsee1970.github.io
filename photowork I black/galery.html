@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Lévai Károly fotógalériája - fekete-fehér képek"
+      content="Minden, amit én látok a fotózásban, röviden, tömören, lényegre törően"
     />
-    <title>Galériám</title>
+    <meta name="keywords" content="photo, composition, jpeg, DSLR, pictures" />
+    <meta name="author" content="bigsee1970" />
+    <title>Lévai Photo</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -18,8 +20,116 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="preload" href="/BW/P/P_image005.png" as="image" /> -->
     <style>
+
+      @media screen and (max-width: 991px) {
+        .welcome {
+          position: static !important;
+          top: auto !important;
+          z-index: auto !important;
+        }
+        /* Lightbox nyilak alulra mobil nézetben */
+        .lightbox-content {
+          position: relative;
+        }
+        .lightbox .prev, .lightbox .next {
+          position: absolute;
+          left: 25%;
+          right: 25%;
+          bottom: 10px;
+          top: auto;
+          width: 20%;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 10;
+        }
+        .lightbox .prev {
+          left: 10%;
+          right: auto;
+        }
+        .lightbox .next {
+          right: 10%;
+          left: auto;
+        }
+
+        body {
+          background-image: none !important;
+          background-color: rgb(142, 132, 132) !important;
+        }
+
+        .welcome {
+          margin: 0;
+          text-align: center;
+
+          font-size: 1.3em;
+          width: 100vw;
+          max-width: 100vw;
+
+          color: rgb(81, 81, 81);
+          text-shadow: 2px 2px 2px #ffa400;
+        }
+        .sidebar {
+          display: none;
+        }
+.galery {
+  width: 100vw;
+  
+}
+
+.footerM {
+          display: flex !important;
+          flex-direction: column;
+
+          /* position: fixed; */
+          /* left: 0; */
+          /* bottom: 0; */
+          width: 100%;
+          border-radius: 8px;
+          margin: 5px 5px 5px 5px;
+
+          z-index: 3000;
+          opacity: 0.6;
+          background-color: rgb(142, 132, 132);
+        }
+
+        #powered_byM {
+          height: auto;
+          width: 75%;
+          align-items: center;
+        }
+
+.navbarM {
+          display: flex;
+          /* flex-direction: row; */
+          justify-content: center;
+          align-items: center;
+          gap: 1em;
+        }
+        .navbarM a {
+          display: inline-block;
+          margin: 0 0.5em;
+        }
+
+        .navbarM nav ul {
+          list-style: none;
+          text-decoration: none;
+        }
+
+        .navbarM nav a {
+          color: #ffa400;
+          text-decoration: none;
+          font-size: 1em;
+          /* display: block; */
+          padding: 10px;
+          border-radius: 4px;
+          transition: background-color 0.3s;
+        }
+      }/* Mbilszekció vége!!! */
+
+      
       body {
-        background-image: url("kepek/lens_camera_dark_background_887195_1280.jpg");
+        background-image: url("bw/gall_bg.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -30,7 +140,7 @@
         top: 0;
         right: 0;
         height: 100vh;
-        width: 10vw;
+        width: 11vw;
         z-index: 1000;
         background: rgba(0, 0, 0, 0.7);
         color: #fff;
@@ -44,6 +154,13 @@
         z-index: 999;
         padding: 1rem;
       }
+
+      #click {
+        color: #ffa400;
+      }
+
+
+
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -61,115 +178,166 @@
 
     <div class="main-content">
       <div class="welcome"><h1 class="animate__animated animate__fadeInLeft">Photo-im</h1></div>
-      
+      <div class="navbarM">
+        <nav>
+          <ul>
+            <div>
+              <li>
+                <a href="index.html">Főoldal</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul>
+            <div>
+              <li>
+                <a href="photomaking.html">Fotózás</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul>
+            <div>
+              <li>
+                <a href="contact.html">Kontakt</a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
 
       <div class="galery">
         <div class="portrait">
-          <a href="BW/P/1000006291-01.jpg" class="portrait">
+          <a href="bw/P/columns.jpg" class="portrait">
             <img
-              src="BW/P/1000006291-01.jpg"
+              src="bw/P/columns.jpg"
               alt="Oszlopok"
               loading="lazy"
               title="Oszlopok"
             />
           </a>
-          <a href="BW/P/PBW_image001_II.jpg" class="portrait">
+          <a href="bw/P/windows.jpg" class="portrait">
             <img
-              src="BW/P/PBW_image001_II.jpg"
+              src="bw/P/windows.jpg"
               alt="Ablakban"
               loading="lazy"
               title="Ablakban"
             />
           </a>
-          <a href="BW/P/P_image003.jpg" class="portrait">
+
+          <a href="bw/P/wood.jpg" class="portrait">
             <img
-              src="BW/P/P_image003.jpg"
+              src="bw/P/wood.jpg"
               alt="Fa és hold"
               loading="lazy"
               title="Fa és hold"
             />
+</a>
 
-            <a href="BW/P/P1000003580-01_1280.jpeg" class="portrait">
+<a href="bw/P/smog.jpg" class="portrait">
             <img
-              src="BW/P/P1000003580-01_1280.jpeg"
+              src="bw/P/smog.jpg"
+              alt="Ködben"
+              loading="lazy"
+              title="Ködben"
+            />
+</a>
+
+<a href="bw/P/chill.jpg" class="portrait">
+            <img
+              src="bw/P/chill.jpg"
+              alt="Csendes napnyugta"
+              loading="lazy"
+              title="Csendes napnyugta"
+            />
+          </a>
+            <a href="bw/P/winter.jpeg" class="portrait">
+            <img
+              src="bw/P/winter.jpeg"
               alt="Télárnyék"
               loading="lazy"
               title="Télárnyék"
             />
 
           </a>
-          <a href="BW/P/P_image004.jpg" class="portrait">
-            <img
-              src="BW/P/P_image004.jpg"
-              alt="Csendes napnyugta"
-              loading="lazy"
-              title="Csendes napnyugta"
-            />
-          </a>
+          
         </div>
 
         <div class="square">
-          <a href="BW/S/Suvegek_1000.jpg" class="square">
+          <a href="bw/S/glass.jpg "class="square">
             <img
-              src="BW/S/Suvegek_1000.jpg"
+              src="bw/S/glass.jpg"
               alt="Üvegek"
               loading="lazy"
               title="Üvegek"
             />
           </a>
-          <a href="BW/S/SBW_image001.jpg" class="square">
+          <a href="bw/S/paw.jpg" class="square">
             <img
-              src="BW/S/SBW_image001.jpg"
+              src="bw/S/paw.jpg"
               alt="Mancs"
               loading="lazy"
               title="Mancs"
             />
           </a>
-          <a href="BW/S/SBW_image003.jpg" class="square">
+
+          <a href="bw/S/cat.jpeg" class="square">
             <img
-              src="BW/S/SBW_image003.jpg"
-              alt="Virágom"
-              loading="lazy"
-              title="Virágom"
-            />
-            <a href="BW/S/macsek.jpeg" class="square">
-            <img
-              src="BW/S/macsek.jpeg"
+              src="bw/S/cat.jpeg"
               alt="Macska"
               loading="lazy"
               title="Virágom"
             />
           </a>
-          <a href="BW/S/SBW_image004.jpg" class="square">
+          <a href="bw/S/flower.jpg" class="square">
             <img
-              src="BW/S/SBW_image004.jpg"
+              src="bw/S/flower.jpg"
+              alt="Virágom"
+              loading="lazy"
+              title="Virágom"
+            />
+             <a href="bw/S/lock.jpg" class="square">
+            <img
+              src="bw/S/lock.jpg"
+              alt="Forever"
+              loading="lazy"
+              title="Forever"
+            />
+          </a>
+          <a href="bw/S/leaf.jpg" class="square">
+            <img
+              src="bw/S/leaf.jpg"
               alt="Leveled jött!"
               loading="lazy"
               title="Leveled jött!"
             />
           </a>
-          
+
         </div>
 
         <div class="landscape">
-          <a href="BW/L/L_image004.jpg" class="landscape">
+          <a href="bw/L/volt.jpg" class="landscape">
             <img
-              src="BW/L/L_image004.jpg"
+              src="bw/L/volt.jpg"
               alt="Feszültség"
               loading="lazy"
               title="Feszültség"
             />
           </a>
-          <a href="BW/L/LBW_image003.jpg" class="landscape">
+          <a href="bw/L/level.jpg" class="landscape">
             <img
-              src="BW/L/LBW_image003.jpg"
+              src="bw/L/level.jpg"
               alt="Vízállás"
               loading="lazy"
               title="Vízállás"
             />
-<a href="BW/L/Lborok_1280.jpg" class="landscape">
+<a href="bw/L/glasses.jpg" class="landscape">
             <img
-              src="BW/L/Lborok_1280.jpg"
+              src="bw/L/glasses.jpg"
               alt="Borok"
               loading="lazy"
               title="Borosüvegek"
@@ -178,27 +346,61 @@
 
           </a>
           
-          <a href="BW/L/LBW_image004.jpg" class="landscape">
+          <a href="bw/L/port.jpg" class="landscape">
             <img
-              src="BW/L/LBW_image004.jpg"
+              src="bw/L/port.jpg"
               alt="Kikötő"
               loading="lazy"
               title="Kikötő"
             />
           </a>
-          <a href="BW/L/L_image007.jpg" class="landscape">
+          <a href="bw/L/boss.jpg" class="landscape">
             <img
-              src="BW/L/L_image007.jpg"
+              src="bw/L/boss.jpg"
               alt="A főnök"
               loading="lazy"
               title="A főnök"
+            />
+          </a>
+
+          <a href="bw/L/train.jpg" class="landscape">
+            <img
+              src="bw/L/train.jpg"
+              alt="Úton"
+              loading="lazy"
+              title="Úton"
             />
           </a>
         </div>
         <br>
         
       </div>
+
+      <div class="footerM">
+          <footerM>
+            <p class="spanM">
+              &copy; 2025 - levaikaroly - Minden jog fenntartva!
+            </p>
+
+            <div id="powered_byM">
+              <p>Inspired & Powered by</p>
+
+              <a
+                href="http://www.prooktatas.hu/"
+                target="_blank"
+                class="animate__animated animate__flash animate__repeat -2"
+              >
+                <img
+                  style="height: auto; width: 75%; cursor: pointer"
+                  src="bw/pro.png"
+                />
+              </a>
+            </div>
+          </footerM>
+        </div>
     </div>
+
+    
 <div class="sidebar">
       <nav>
         <ul>
@@ -208,22 +410,34 @@
           <li><a href="contact.html" class="animate__animated animate__lightSpeedInRight">Kontakt</a></li>
         </ul>
       </nav> <hr> 
-      <!-- <footer class="footer">
-        <a href="facebook.com">FB logo</a>
-        <a href="instagram.com">Insta logo</a>
-        <a href="www.github.com">Git logo</a>
-
-        <br />
-        <span>&copy; 2025 - levaikaroly - Minden jog fenntartva!</span>
-      </footer> -->
-
+      
       <nav>
         <ul>
           <li>
-            <a href="#" class="animate__animated animate__lightSpeedInRight">&larr; Kattints a képekre, elindul a vetítés!</a>
-          </li> 
+            <p class="animate__animated animate__lightSpeedInRight" id="click">&larr; <b>Kattints a képekre, elindul a vetítés!</b></p>
+          </li>
         </ul>
       </nav>
+      <div class="footer">
+      <footer>
+        <p><span>&copy; 2025 - levaikaroly - Minden jog fenntartva!</span></p>
+
+        <div id="powered_by">
+          <p>Inspired & Powered by</p>
+
+          <a
+            href="http://www.prooktatas.hu/"
+            target="_blank"
+            class="animate__animated animate__flash animate__repeat -2"
+          >
+            <img
+              style="height: auto; width: 75%; cursor: pointer"
+              src="bw/pro.png"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
     </div>
     <!-- Lightbox -->
     <div id="lightbox" class="lightbox">
@@ -297,6 +511,9 @@
         caption.textContent = images[currentSlide].caption;
         lightbox.style.display = "block";
 
+        // Animáció eltávolítása, hogy ne csússzon balra
+        img.classList.remove("animate__animated", "animate__fadeInLeft");
+
         // 4 másodperc múlva automatikus slideshow indítása
         setTimeout(() => {
           startSlideshow();
@@ -336,16 +553,19 @@
         img.src = images[currentSlide].src;
         caption.textContent = images[currentSlide].caption;
 
+        // Animáció eltávolítása, hogy ne csússzon balra
+        img.classList.remove("animate__animated", "animate__fadeInLeft");
+
         // Újraindítjuk a slideshow-t 4 másodperc múlva
         setTimeout(() => {
           startSlideshow();
-        }, 4000);
+        }, 2000);
       }
 
       function startSlideshow() {
         slideInterval = setInterval(() => {
           changeSlide(1);
-        }, 8000);
+        }, 2000);
       }
 
       function stopSlideshow() {
