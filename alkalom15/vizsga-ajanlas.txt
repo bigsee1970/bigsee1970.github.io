@@ -1,0 +1,44 @@
+Ajánlások a vizsgamunkára:
+
+- Bootstrap használatának mellőzése, amennyiben lehetséges
+- külső css fájl
+- reszponzív oldal
+- HTML5 elemek
+- HEAD (meta tag-ek, alapvető SEO beállítások)
+- 3-4 menüpont
+
+HTML ajánlott elemek
+
+- felsorolás
+- táblázat
+- hang v. videó
+- űrlap
+- linkek (könyvjelző, külső oldalra, e-mail, telefon)
+- kép körbe folyatva szöveggel
+- favicon
+- térkép beágyazás
+- ikon
+- címsor
+
+CSS ajánlott elemek
+
+- saját betűtípus pl.: Google Fonts-ról
+- oldalnak v. 'doboz'-nak legyen háttere (szín v. kép)
+- margin
+- padding
+- border
+- lekerekítés
+
++ Pozitívum, ha valamilyen általad írd scriptet is használsz az oldal funkcióinak, vagy megjelenésének bővítésére.
+
+A legfontosabb szempontok:
+
+- Esztétikus elrendezés.
+
+- Reszponzív oldal (a designhoz igazítva vagy 3 mobil, tablet, desktop nézet).
+ 
+- Jól olvasható szövegek (háttér - betűszín kontraszt, betűméret arányos kivitelezése) 
+
+- Olyan oldal legyen, amit szívesen megmutatnál referenciaként/állásinterjún.
+
+- Githubra feltölve

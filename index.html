@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Like számláló</title>
+</head>
+<body>
+
+  <button onclick="like()">👍 Like</button>
+  <span id="szamlalo">0</span> ember lájkolta az oldalt
+
+  <script>
+    // Betöltéskor ellenőrizzük, van-e eltárolt érték
+    let szam = localStorage.getItem("likeSzamlalo");
+
+    if (szam === null) {
+      szam = 0; // ha nincs, induljon 0-ról
+    } else {
+      szam = parseInt(szam); // szöveget számmá alakítjuk
+    }
+
+    // Kezdőérték kiírása
+    document.getElementById("szamlalo").innerText = szam;
+
+    function like() {
+      szam++; // növeljük
+      document.getElementById("szamlalo").innerText = szam;
+
+      // elmentjük a böngészőbe
+      localStorage.setItem("likeSzamlalo", szam);
+    }
+  </script>
+
+</body>
+</html>

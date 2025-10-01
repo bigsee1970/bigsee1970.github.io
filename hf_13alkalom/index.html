@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lévai házifeladat 13.</title>
+    <link rel="stylesheet" href="css/hw_13.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+  </head>
+  <body>
+    <div class="content">
+      <div class="heading">
+        <img
+          src="img/szemuveg.jpg"
+          alt="nyar_hoseg_hohullam_meleg_kanikula_uv_sugarzas_vizpart_strand_napszemuveg"
+          id="headpic"
+        />
+      </div>
+      <div class="main-menu">
+        <ul>
+          <li>
+            <a href="#link1">Balaton</a>
+          </li>
+          <li>
+            <a href="#link2">Tisza-tó</a>
+          </li>
+          <li>
+            <a href="#link3">Szelidi-tó</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-container">
+        <div class="aside">
+          <div class="aside-menu">
+            <ul>
+              <li>
+                <a href="#link1">* Balaton</a>
+              </li>
+              <li>
+                <a href="#link2">* Tisza-tó</a>
+              </li>
+              <li>
+                <a href="#link3">* Szelidi-tó</a>
+              </li>
+            </ul>
+          </div>
+          <div class="form">
+            <p>Kérem töltse ki a jelentkezési űrlapot!</p>
+            <label for="name">Név:</label><br />
+            <input
+              id="name"
+              type="text"
+              name="username"
+              placeholder="Marmon K. Anna"
+              required
+            /><br />
+            <br />
+            <label for="email">E-mail:</label><br />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="valami@valami.com"
+              required
+            /><br />
+            <br />
+            <label for="phone">Telefon:</label><br />
+            <input
+              id="phone"
+              type="number"
+              name="phone"
+              placeholder="+36301234567"
+              required
+              required
+            /><br />
+            <br />
+            <label for="lakechoose">Melyik tó érdekli:</label><br />
+            <select id="lakechoose" name="lakechoose" required>
+              <option value="">Válasszon</option>
+              <option value="Balaton">A balaton</option>
+              <option value="Tisza">A Tisza-tó</option>
+              <option value="Szelidi">A Szelidi-tó</option>
+            </select>
+
+            <p>Milyen szállást keres?</p>
+            <div class="form-group">
+              <label
+                ><input id="hotel" type="checkbox" name="hotel" required />
+                Szálloda</label
+              ><br />
+              <label
+                ><input
+                  id="apartman"
+                  type="checkbox"
+                  name="apartman"
+                  required
+                />
+                Apartmanház</label
+              ><br />
+              <label
+                ><input id="camping" type="checkbox" name="kemping" required />
+                Kemping</label
+              ><br />
+            </div>
+            <p>Ellátás típusa?</p>
+            <div class="form-group">
+              <label
+                ><input id="full" type="radio" name="ellatas" required />
+                Teljes</label
+              ><br />
+              <label
+                ><input id="half" type="radio" name="ellatas" required />
+                Félpanzió</label
+              ><br />
+              <label
+                ><input id="breakfast" type="radio" name="ellatas" required />
+                Csak reggeli</label
+              ><br />
+              <label
+                ><input id="none" type="radio" name="ellatas" required /> Nem
+                kérek ellátást</label
+              ><br />
+            </div>
+            <br />
+            <div>
+              <label for="text">Üzenet:</label><br />
+              <textarea
+                name="text"
+                id="message"
+                maxlength="600"
+                placeholder="Ha valamit még elmondanál nekünk..."
+              ></textarea>
+            </div>
+          </div>
+
+          <button>Mehet</button>
+        </div>
+
+        <div class="main-sections">
+          <t id="title">A Balaton</t>
+          <div class="section1" id="link1">
+            <img src="img/balatonkicsi.jpg" alt="Balaton" class="float-image" />
+            <p>
+              A Balaton Közép-Európa legnagyobb tava, Magyarország egyik
+              legnépszerűbb üdülőhelye. Nyáron több ezer turista látogat el ide,
+              hogy élvezze a napsütést és a vízpartot. A tó körül számos város
+              és falu található, mint például Siófok, Balatonfüred és Keszthely.
+              A Balaton északi partja dombosabb, míg a déli part sekélyebb és
+              strandolásra kiváló. A tó vize nyáron kellemesen meleg, így kiváló
+              fürdésre és vízi sportokra. Télen, ha befagy, korcsolyázásra és
+              jégvitorlázásra is alkalmas. A környéken borászatok, kilátók és
+              túraútvonalak is várják a látogatókat. A Balaton-felvidék
+              természeti szépsége lenyűgöző és fotózásra is tökéletes. A tó
+              kulturális eseményeknek és fesztiváloknak is otthont ad egész
+              évben. A Balaton valóban Magyarország egyik legszebb és
+              legkedveltebb vidéke.
+            </p>
+          </div>
+          <t id="title">A Tisza-tó</t>
+          <div class="section2" id="link2">
+            <img src="img/tiszato.jpg" alt="Tisza-tó" class="float-image" />
+            <p>
+              A Tisza-tó Magyarország második legnagyobb tava, a Tisza folyó
+              duzzasztásával jött létre. A tó különlegessége, hogy mesterséges,
+              de mégis gazdag élővilág alakult ki benne. A Tisza-tó kiváló hely
+              horgászatra, csónakázásra és madármegfigyelésre. A vízpartot
+              nádasok, kisebb szigetek és sekély öblök tagolják. Poroszlón
+              található a Tisza-tavi Ökocentrum, ahol az élővilággal
+              ismerkedhetnek a látogatók. A tó körüli kerékpárút népszerű a
+              sportkedvelők körében. Nyáron strandolásra és vízi túrákra is
+              lehetőség van. A természetkedvelők számára igazi paradicsom a
+              környék. A Tisza-tó ökoturizmus szempontjából egyre népszerűbb
+              célpont. Csendesebb, nyugodtabb alternatívát nyújt a Balatonhoz
+              képest.
+            </p>
+          </div>
+          <t id="title">A Szelidi-tó</t>
+          <div class="section3" id="link3">
+            <img src="img/szelidito.jpg" alt="Szelidi-tó" class="float-image" />
+            <p>
+              A Szelidi-tó Bács-Kiskun vármegyében található, Kalocsa közelében.
+              Ez egy természetes eredetű tó, amely különleges, lúgos kémhatású
+              vizéről ismert. A víz gyógyhatású, és kedvelt fürdőhely a nyári
+              hónapokban. A tó partján homokos strand, éttermek és szálláshelyek
+              várják a látogatókat. A környék csendes, családbarát környezetet
+              kínál. A tó vízfelülete sekély, így ideális kisgyermekes
+              családoknak is. Lehetőség van horgászatra és csónakázásra is. A
+              Szelidi-tó Természetvédelmi Terület része, így gazdag növény- és
+              madárvilággal büszkélkedhet. A nyári Szelidi-tavi Napok fesztivál
+              sok látogatót vonz. A Szelidi-tó nyugalmat és kikapcsolódást nyújt
+              a természet kedvelőinek.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="foot" style="order: 6">
+        <span>&copy; 2025 - levaikaroly - Minden jog fenntartva!</span>
+        <nav>
+          <a href="mailto:dontwritetome70@gmail.com">Kapcsolat</a> |
+          <a href="https://github.com/" target="blank">GitHub</a> |
+          <a href="adatvedelem.html">Adatvédelem</a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

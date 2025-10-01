@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizsga 2025 május | 29/a. feladat</title>
+
+    <style>
+        body {
+  background: #eaf4f2;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.form-container {
+  background: #fff;
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 36px 32px 28px 32px;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #23304a;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+.form-group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.form-group input {
+  flex: 1;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  color: #23304a;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #dbe7e4;
+  border-radius: 8px;
+  background: #eaf4f2;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 6px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #23304a;
+  box-shadow: 0 0 0 2px #dbe7e4;
+  background: #f6fbfa;
+}
+
+input[type="password"]:hover {
+  border-color: #23304a;
+  background: #f6fbfa;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 13px 0;
+  background: #23304a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 18px;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #1a2536;
+}
+
+.required {
+  color: #e74c3c;
+  margin-left: 2px;
+  font-size: 1.1em;
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+  <h1>Regisztráció</h1>
+  <form>
+    <label for="company">Cég neve<span class="required">*</span></label>
+    <input type="text" id="company" name="company" required>
+
+    <div class="form-group">
+      <div>
+        <label for="vezeteknev">Vezetéknév<span class="required">*</span></label>
+        <input type="text" id="vezeteknev" name="vezeteknev" required>
+      </div>
+      <div>
+        <label for="keresztnev">Keresztnév<span class="required">*</span></label>
+        <input type="text" id="keresztnev" name="keresztnev" required>
+      </div>
+    </div>
+
+    <label for="email">E-mail cím<span class="required">*</span></label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Jelszó<span class="required">*</span></label>
+    <input type="password" id="password" name="password" required>
+
+    <div style="margin: 16px 0;">
+      <input type="checkbox" id="accept" name="accept">
+      <label for="accept" style="display:inline;">
+        Elfogadom a <a href="#">szerződési feltételeket</a> és az <a href="#">adatvédelmi nyilatkozatot</a>
+      </label>
+    </div>
+
+    <button type="submit">REGISZTRÁCIÓ</button>
+  </form>
+</div>
+</body>
+</html>
