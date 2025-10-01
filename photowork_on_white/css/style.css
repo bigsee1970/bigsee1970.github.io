@@ -102,9 +102,9 @@ body {
   border: 1px solid black;
   border-radius: 4px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
-  max-width: 35%;
+  max-width: 15%;
   margin: 20px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   float: left;
 }
 
@@ -120,6 +120,7 @@ body {
 
 h2 {
   margin: auto;
+  margin-right: 15px;
   padding: 5px;
   color: darkblue;
   /* font-weight: 600; */
@@ -245,6 +246,7 @@ nav.navbar a:focus {
   padding: 0.5rem 1rem;
   border-radius: 0 0 8px 8px;
   font-weight: 600;
+  
 }
 
 .continue-btn:hover {
@@ -271,8 +273,7 @@ nav.navbar a:focus {
 
 .content1 {
   box-shadow: 10px 10px 5px lightblue;
-  border-left: 1px solid blue;
-  border-top: 1px solid blue;
+
   background-color: lightblue;
   opacity: 0.7;
   border-radius: 8px;
@@ -283,8 +284,7 @@ nav.navbar a:focus {
 
 .content2 {
   box-shadow: 10px 10px 5px lightblue;
-  border-left: 1px solid blue;
-  border-top: 1px solid blue;
+
   background-color: lightblue;
   opacity: 0.7;
   border-radius: 8px;
@@ -294,8 +294,7 @@ nav.navbar a:focus {
 
 .content3 {
   box-shadow: 10px 10px 5px lightblue;
-  border-left: 1px solid blue;
-  border-top: 1px solid blue;
+
   background-color: lightblue;
   opacity: 0.7;
   border-radius: 8px;
@@ -305,8 +304,7 @@ nav.navbar a:focus {
 
 .content4 {
   box-shadow: 10px 10px 5px lightblue;
-  border-left: 1px solid blue;
-  border-top: 1px solid blue;
+
   background-color: lightblue;
   opacity: 0.7;
   border-radius: 8px;
@@ -316,8 +314,7 @@ nav.navbar a:focus {
 
 .content5 {
   box-shadow: 10px 10px 5px lightblue;
-  border-left: 1px solid blue;
-  border-top: 1px solid blue;
+
   background-color: lightblue;
   opacity: 0.7;
   border-radius: 8px;
@@ -327,8 +324,7 @@ nav.navbar a:focus {
 
 .content6 {
   box-shadow: 10px 10px 5px lightblue;
-  border-left: 1px solid blue;
-  border-top: 1px solid blue;
+
   background-color: lightblue;
   opacity: 0.7;
   border-radius: 8px;
@@ -356,4 +352,25 @@ p {
   float: left;
   margin-left: 5%;
   margin-top: 5%;
+}
+
+.mainbox {
+  max-width: 95%;
+  margin: auto;
+  margin-top: 25px;
+  box-sizing: border-box;
+  border-radius: 18px;
+  background-color: olive;
+}
+
+.mainbox h1 {
+   text-align: center;
+   margin: auto;
+   margin-bottom: 0;
+   padding: auto;
+   padding-top: 25px;
+}
+
+.mainbox p {
+  margin-top: 0;
 }
