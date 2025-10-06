@@ -146,9 +146,9 @@ h3 {
   background-color: grey;
   opacity: 0.6;
   border-radius: 50px;
-  margin: 3%;
+  margin: 2%;
   margin-top: 1%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   padding: 0.5rem 1rem;
 }
 
@@ -272,7 +272,7 @@ nav.navbar a:focus {
 }
 
 .content1 {
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 3px 3px 3px lightblue;
 
   background-color: lightblue;
   opacity: 0.7;
@@ -283,7 +283,7 @@ nav.navbar a:focus {
 }
 
 .content2 {
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 3px 3px 3px lightblue;
 
   background-color: lightblue;
   opacity: 0.7;
@@ -293,7 +293,7 @@ nav.navbar a:focus {
 }
 
 .content3 {
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 3px 3px 3px lightblue;
 
   background-color: lightblue;
   opacity: 0.7;
@@ -303,7 +303,7 @@ nav.navbar a:focus {
 }
 
 .content4 {
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 3px 3px 3px lightblue;
 
   background-color: lightblue;
   opacity: 0.7;
@@ -313,7 +313,7 @@ nav.navbar a:focus {
 }
 
 .content5 {
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 3px 3px 3px lightblue;
 
   background-color: lightblue;
   opacity: 0.7;
@@ -323,7 +323,7 @@ nav.navbar a:focus {
 }
 
 .content6 {
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 3px 3px 3px lightblue;
 
   background-color: lightblue;
   opacity: 0.7;
@@ -374,3 +374,7 @@ p {
 .mainbox p {
   margin-top: 0;
 }
+
+
+
+
